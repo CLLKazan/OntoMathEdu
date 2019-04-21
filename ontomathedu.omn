@@ -57,28 +57,6 @@ Datatype: rdf:PlainLiteral
 Datatype: xsd:string
 
     
-ObjectProperty: ontomathedu:aboutness
-
-    Annotations: 
-        rdfs:label "предметность"@ru,
-        rdfs:label "aboutness"@en
-    
-    Domain: 
-        ontomathedu:RNYunoAZSj9GN9IWxNYLXO
-    
-    
-ObjectProperty: ontomathedu:expressesCriteriaOf
-
-    SubPropertyOf: 
-        ontomathedu:aboutness
-    
-    
-ObjectProperty: ontomathedu:expressesPropertyOf
-
-    SubPropertyOf: 
-        ontomathedu:aboutness
-    
-    
 ObjectProperty: ontomathedu:hasArgument
 
     Annotations: 
@@ -474,7 +452,8 @@ Class: ontomathedu:R75yGkcLI49kX2yuafYKxma
         rdfs:label "Вписанный треугольник"@ru
     
     SubClassOf: 
-        ontomathedu:R7Pp9ZeF9Cvz51hjCIwFMDP
+        ontomathedu:R7Pp9ZeF9Cvz51hjCIwFMDP,
+        ontomathedu:RDE5zanRvaa9BRn3cYniCkv
     
     
 Class: ontomathedu:R760ShCFXcafu6OjqQljmlY
@@ -6289,8 +6268,8 @@ Class: ontomathedu:RDE5zanRvaa9BRn3cYniCkv
         foaf:page <https://ru.wikipedia.org/wiki/Треугольник>
     
     EquivalentTo: 
-        ((ontomathedu:isDeterminedBy min 1 ontomathedu:RmGwGGk9PEXSiUM7MUctP2)
-         and (ontomathedu:isDeterminedBy min 2 ontomathedu:RqvmasCkZXZW48rYaxAArK)) or (ontomathedu:isDeterminedBy min 3 ontomathedu:RDJOKxTbVS3JR5ppAUl2l1K) or (ontomathedu:isDeterminedBy min 3 ontomathedu:RqvmasCkZXZW48rYaxAArK)
+        ((ontomathedu:isDeterminedBy min 1 ontomathedu:RqvmasCkZXZW48rYaxAArK)
+         and (ontomathedu:isDeterminedBy min 2 ontomathedu:RmGwGGk9PEXSiUM7MUctP2)) or (ontomathedu:isDeterminedBy min 2 ontomathedu:RqvmasCkZXZW48rYaxAArK) or (ontomathedu:isDeterminedBy min 3 ontomathedu:RDJOKxTbVS3JR5ppAUl2l1K)
     
     SubClassOf: 
         ontomathedu:RClErTt60ZsYHdBKiW2gA2W
@@ -9363,8 +9342,4 @@ Class: ontomathedu:Rzr7SACTSKWUEbp5G1E2Bz
     
     SubClassOf: 
         ontomathedu:RBEXP85H7rF8NK9orVbZ84E
-    
-    
-Class: owl:Thing
-
     
