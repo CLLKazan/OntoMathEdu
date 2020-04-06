@@ -13,12 +13,12 @@ Ontology: <http://ontomathpro.org/ontomathedu#>
 
 
 Annotations: 
+    rdfs:label "OntoMathEdu ontology",
     dc:creator "Alik Kirillovich <alik.kirillovich@gmail.com>"^^xsd:string,
     dc:creator "Eugeny Lipachev <elipachev@gmail.com>"^^xsd:string,
     dc:creator "Liliana Shakirova <liliana008@mail.ru>"^^xsd:string,
     dc:creator "Marina Falileeva <mmwwff@yandex.ru>"^^xsd:string,
-    dc:creator "Olga Nevzorova <onevzoro@gmail.com>"^^xsd:string,
-    rdfs:label "OntoMathEdu ontology"
+    dc:creator "Olga Nevzorova <onevzoro@gmail.com>"^^xsd:string
 
 
 AnnotationProperty: dc:creator
@@ -285,27 +285,21 @@ Class: <http://ontomathpro.org/ontomathedu#%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%
         <http://ontomathpro.org/ontomathedu#R9RlIeAHdKBcgCvNHSQkvTm>
     
     
-Class: <http://ontomathpro.org/ontomathedu#%D0%A2%D0%BE%D1%87%D0%BA%D0%B0%D0%9B%D0%B5%D0%B6%D0%B8%D1%82%D0%92%D0%BD%D0%B5%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8>
-
-    Annotations: 
-        rdfs:label "Точка лежит вне окружности"@ru
-    
-    SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#RB0VqNNOSWAaEcyKZpkvVSp>
-    
-    
 Class: <http://ontomathpro.org/ontomathedu#%D0%A2%D0%BE%D1%87%D0%BA%D0%B0%D0%9B%D0%B5%D0%B6%D0%B8%D1%82%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B8%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8>
 
     Annotations: 
+        rdfs:label "Point lies inside a circle"@en,
+        rdfs:label "Нокта әйләнә әчендә ята"@tt,
         rdfs:label "Точка лежит внутри окружности"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#RB0VqNNOSWAaEcyKZpkvVSp>
+        ome:RDFH6PcwRBqOAcCG4qckl8d
     
     
 Class: <http://ontomathpro.org/ontomathedu#%D0%A2%D0%BE%D1%87%D0%BA%D0%B0%D0%9F%D1%80%D0%B8%D0%BD%D0%B0%D0%B4%D0%BB%D0%B5%D0%B6%D0%B8%D1%82%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8>
 
     Annotations: 
+        rdfs:label "Нокта әйләнәдә ята"@tt,
         rdfs:label "Точка принадлежит окружности"@ru
     
     SubClassOf: 
@@ -448,12 +442,15 @@ Class: <http://ontomathpro.org/ontomathedu#R19E09otwGjwr901G40fJX>
 Class: <http://ontomathpro.org/ontomathedu#R1iaofJAvCeE4fS6avsl98>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9-p>,
+        ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/glava-16/teorema-o-raspolojenii-ortocentra-tochki-peresecheniya-median-i-centra-opisannoi-okrujnosti-v-treugolnike/>,
         rdfs:label "Theorem about Euler's line"@en,
         rdfs:label "Теорема о прямой Эйлера"@ru,
         rdfs:label "Эйлер турысы турында теорема"@tt
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R8EG3juvpyWMRMbIyCGDDXr>
+        <http://ontomathpro.org/ontomathedu#R8EG3juvpyWMRMbIyCGDDXr>,
+        <http://ontomathpro.org/ontomathedu#RCBJC9qSOBHoNp5IuERwYnb>
     
     
 Class: <http://ontomathpro.org/ontomathedu#R1lvqaZTspKzOcC7tUsMef>
@@ -471,6 +468,7 @@ Class: <http://ontomathpro.org/ontomathedu#R1n4oVDJe9nlPDz4mM78FE>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Theorem about a triangle medians intersection"@en,
         rdfs:label "Теорема о пересечении медиан треугольника"@ru,
         rdfs:label "Өчпочмак медианалары кисешүе турындагы теорема"@tt
@@ -516,7 +514,7 @@ Class: <http://ontomathpro.org/ontomathedu#R3BX6xrZNpBRKKqC9wtLd2>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9-p>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Medial_triangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Medial_triangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Серединный_треугольник>,
         rdfs:label "Medial triangle"@en,
         rdfs:label "Серединный треугольник"@ru,
@@ -530,6 +528,8 @@ Class: <http://ontomathpro.org/ontomathedu#R3BX6xrZNpBRKKqC9wtLd2>
 Class: <http://ontomathpro.org/ontomathedu#R3xQjysSEnMRr4eF1n8Hkd>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
         rdfs:label "Problem of constructing a triangle given two angles and the included side"@en,
         rdfs:label "Задача о построении циркулем и линейкой треугольника по стороне и двум прилежащим к ней углам"@ru,
         rdfs:label "Өчпочмакны як һәм шул якка таянган ике почмак буенча циркуль һәм линейка белән төзү турында мәсьәлә"@tt
@@ -588,7 +588,7 @@ Class: <http://ontomathpro.org/ontomathedu#R5MbrSEH1tuI1g6DSUfifA>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Quadrilateral#Diagonals>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Quadrilateral#Diagonals>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Четырёхугольник#Свойства_диагоналей_некоторых_четырёхугольников>,
         rdfs:label "Diagonal of a quadrilateral"@en,
         rdfs:label "Диагональ четырехугольника"@ru,
@@ -604,6 +604,7 @@ Class: <http://ontomathpro.org/ontomathedu#R5dNqNuwvw5vf3q30c6VnR>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
         rdfs:label "Problem of costructing a triangle given three sides"@en,
         rdfs:label "Задача о построении циркулем и линейкой треугольника по трем сторонам"@ru,
         rdfs:label "Өчпочмакны өч як буенча циркуль һәм линейка белән төзү турында мәсьәлә"@tt
@@ -627,7 +628,7 @@ Class: <http://ontomathpro.org/ontomathedu#R6FHh0ItrVLzyuz1npFs47>
 Class: <http://ontomathpro.org/ontomathedu#R6eAnQjkmcl1TqWESl7mgz>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Metre>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Metre>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Метр>,
         rdfs:label "Metre"@en,
         rdfs:label "Метр"@ru,
@@ -670,7 +671,7 @@ Class: <http://ontomathpro.org/ontomathedu#R71GKMyesTQoOWWvX1M74EE>
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/point.html>,
         ome:eduRefRus <https://mathvox.ru/geometria/osnovnie-ponyatiya-i-figuri-geometrii/glava-1-osnovnie-geometricheskie-figuri/tochka-i-pryamaya/>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Point_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Point_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Точка_(геометрия)>,
         rdfs:label "Point"@en,
         rdfs:label "Нокта"@tt,
@@ -684,7 +685,7 @@ Class: <http://ontomathpro.org/ontomathedu#R72oSSNXLuPaqP0X0QhQgi7>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Cyclic_quadrilateral>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Cyclic_quadrilateral>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Вписанный_четырёхугольник>,
         rdfs:label "Inscribed quadrilateral"@en,
         rdfs:label "Вписанный четырехугольник"@ru,
@@ -708,7 +709,7 @@ Class: <http://ontomathpro.org/ontomathedu#R74DG1jY8k4gbh0gpDMkEQa>
 Class: <http://ontomathpro.org/ontomathedu#R74VQQJUhI8w8zslxl8WznH>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Curve_of_constant_width>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Curve_of_constant_width>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Кривая_постоянной_ширины>,
         rdfs:label "Orbiform curve"@en,
         rdfs:label "Даими киңлекле кәкре сызык"@tt,
@@ -767,7 +768,7 @@ Class: <http://ontomathpro.org/ontomathedu#R760ShCFXcafu6OjqQljmlY>
 Class: <http://ontomathpro.org/ontomathedu#R76B9YcMI6fxJVKcRA7XFQQ>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Axial_symmetry>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Axial_symmetry>,
         rdfs:label "Axis of symmetry"@en,
         rdfs:label "Ось симметрии"@ru,
         rdfs:label "Симметрия күчәре"@tt
@@ -781,7 +782,7 @@ Class: <http://ontomathpro.org/ontomathedu#R77rMIKQCkGoYqCMtFjBpfQ>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Origin_(mathematics)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Origin_(mathematics)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Начало_координат>,
         rdfs:label "Origin of a Cartesian coordinate system"@en,
         rdfs:label "Координаталар башлангычы"@tt,
@@ -821,7 +822,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7A9cUAGukpfuHXdn729V8w>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/pentagon.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Pentagon>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Pentagon>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Пятиугольник>,
         rdfs:label "Pentagon"@en,
         rdfs:label "Бишпочмак"@tt,
@@ -846,7 +847,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7AQQw8t2QCX3SryvUd39IZ>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Semicircle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Semicircle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Полукруг>,
         rdfs:label "Semicircle"@en,
         rdfs:label "Полуокружность"@ru,
@@ -883,8 +884,8 @@ Class: <http://ontomathpro.org/ontomathedu#R7K6euqVDSFlxDjgPEN3Swl>
 
     Annotations: 
         rdfs:label "Segment of tangent line to two circles"@en,
-        rdfs:label "Отрезок касательной двух окружностей"@ru,
-        rdfs:label "Әйләнә орынмасы кисемтәсе"@tt
+        rdfs:label "Ике әйләнә орынмасының кисемтәсе"@tt,
+        rdfs:label "Отрезок касательной двух окружностей"@ru
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RBvNWOj2ewV9gKcipBmpvSB>
@@ -904,7 +905,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7Kb2PUXZNrh0Du9P5XdVNx>
 Class: <http://ontomathpro.org/ontomathedu#R7LpigImooYjPi0XqAdvAkF>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Degree_(angle)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Degree_(angle)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Градус_(геометрия)>,
         rdfs:label "Degree"@en,
         rdfs:label "Градус"@ru,
@@ -951,7 +952,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7Mej61MvIage1DatMdz1Um>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Equilateral_triangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Equilateral_triangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Правильный_треугольник>,
         rdfs:label "Equilateral triangle"@en,
         rdfs:label "Равносторонний треугольник"@ru,
@@ -992,7 +993,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7NEs4tnFgL2P5sXEnlSTGb>
 Class: <http://ontomathpro.org/ontomathedu#R7NdrgTdx7voyIgLe3nMRD>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Decimetre>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Decimetre>,
         rdfs:label "Decimetre"@en,
         rdfs:label "Дециметр"@ru,
         rdfs:label "Дециметр"@tt
@@ -1028,7 +1029,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7OzRLFwiftwxx50xSQsu5e>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Protractor>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Protractor>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Транспортир>,
         rdfs:label "Protractor"@en,
         rdfs:label "Транспортир"@ru,
@@ -1043,7 +1044,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7Pp9ZeF9Cvz51hjCIwFMDP>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:hasPrerequisite "Многоугольник"^^xsd:string,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Circumscribed_circle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Circumscribed_circle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Описанная_окружность>,
         rdfs:label "Inscribed polygon"@en,
         rdfs:label "Вписанный многоугольник"@ru,
@@ -1058,7 +1059,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7PtKKMhPd84j6pTWKoSibz>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/quadrilaterals.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Quadrilateral>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Quadrilateral>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Четырёхугольник>,
         rdfs:label "Quadrilateral"@en,
         rdfs:label "Дүртпочмак"@tt,
@@ -1098,7 +1099,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7Q96EdVXL34HpaeUBRgrAA>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Unit_vector>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Unit_vector>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Единичный_вектор>,
         rdfs:label "Unit vector"@en,
         rdfs:label "Берәмлек вектор"@tt,
@@ -1171,6 +1172,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7S2pPackVefSknDmXApz6Q>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Angle bisector theorem of an isosceles triangle drawn to the base"@en,
         rdfs:label "Теорема о биссектрисе равнобедренного треугольника, проведенной к основанию"@ru,
         rdfs:label "Тигезъянлы өчпочмакның нигезенә үткәрелгән биссектриса турында теорема"@tt
@@ -1205,7 +1207,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7U1TPkeODDPyCdLYkn9TCZ>
 Class: <http://ontomathpro.org/ontomathedu#R7UnDlH5GXuhmoOalu3TiaR>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Dissection_problem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Dissection_problem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Равносоставленность>,
         rdfs:label "Decomposition-equal geometric figures"@en,
         rdfs:label "Равносоставленные геометрические фигуры"@ru,
@@ -1274,7 +1276,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7XBi3jSbEBzEtI1RV50t9D>
 Class: <http://ontomathpro.org/ontomathedu#R7YD3X6bHdrVh0Vfk3nEWoM>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Cartesian_coordinate_system>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Cartesian_coordinate_system>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Прямоугольная_система_координат>,
         rdfs:label "Cartesian coordinate system"@en,
         rdfs:label "Прямоугольная система координат"@ru,
@@ -1290,7 +1292,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7YD3X6bHdrVh0Vfk3nEWoM>
 Class: <http://ontomathpro.org/ontomathedu#R7YSlp2hSDQph0hDlfp86N2>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Squaring_the_circle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Squaring_the_circle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Квадратура_круга>,
         rdfs:label "Problem about quadrature of a circle"@en,
         rdfs:label "Задача о квадратуре круга"@ru,
@@ -1314,21 +1316,23 @@ Class: <http://ontomathpro.org/ontomathedu#R7ZVPu5x7DvnsPf50nPiaYo>
 Class: <http://ontomathpro.org/ontomathedu#R7ZaAHm9FlSWuhARCqHXgN5>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8-p>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-6-vidi-okrujnostei/vnevpisannie-okrujnosti-opredelenie/>,
         rdfs:label "Mutual arrangement of a triangle and an escribed circle of a triangle"@en,
         rdfs:label "Взаимное расположение треугольника и вневписанной окружности треугольника"@ru,
         rdfs:label "Өчпочмак һәм өчпочмакка тыштан камаулы әйләнәнең үзара торышы"@tt
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#R9KlFSpxi3LCXlfEOUebkMy>,
-        ome:hasArgument some <http://ontomathpro.org/ontomathedu#R84fs2WCfMPAhVmXSHQCWex>,
-        ome:hasArgument exactly 1 <http://ontomathpro.org/ontomathedu#RDE5zanRvaa9BRn3cYniCkv>
+        ome:hasArgument exactly 1 <http://ontomathpro.org/ontomathedu#RDE5zanRvaa9BRn3cYniCkv>,
+        ome:hasArgument max 3 <http://ontomathpro.org/ontomathedu#R84fs2WCfMPAhVmXSHQCWex>
     
     
 Class: <http://ontomathpro.org/ontomathedu#R7aAuXFicP36oAneLIH6yUL>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Line_(geometry)#Ray>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Line_(geometry)#Ray>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Луч_(геометрия)>,
         rdfs:label "Half-line"@en,
         rdfs:label "Луч"@ru,
@@ -1345,7 +1349,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7b8enI11DrMyxRuClhQV95>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Exterior_angle_theorem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Exterior_angle_theorem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_о_внешнем_угле_треугольника>,
         rdfs:label "Exterior angle theorem"@en,
         rdfs:label "Теорема о внешнем угле треугольника"@ru,
@@ -1360,7 +1364,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7bQMJ8tbPs91yfvTT6gWIu>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:hasPrerequisite "Трапеция"^^xsd:string,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Isosceles_trapezoid>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Isosceles_trapezoid>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Равнобедренная_трапеция>,
         rdfs:label "Isosceles trapezoid"@en,
         rdfs:label "Равнобедренная трапеция"@ru,
@@ -1408,6 +1412,8 @@ Class: <http://ontomathpro.org/ontomathedu#R7d1JKwfdHJ3P9owuHaT4bR>
 Class: <http://ontomathpro.org/ontomathedu#R7fdDc24m5aFpM4V8kwqiNo>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
         rdfs:label "Mutual arrangement of a line and a circle"@en,
         rdfs:label "Взаимное расположение прямой и окружности"@ru,
         rdfs:label "Әйләнә һәм турының үзара торышы"@tt
@@ -1493,7 +1499,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7jCZcij6eSAdSsOQSvLhZM>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/nachalnye-geometricheskie-svedeniia-14930/perpendikuliarnye-priamye-9886/re-3cce9aa8-9bff-4fa4-b214-017612e69d4a>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Angle#Vertical_and_adjacent_angle_pairs>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Angle#Vertical_and_adjacent_angle_pairs>,
         rdfs:label "Vertical angles"@en,
         rdfs:label "Вертикаль почмаклар"@tt,
         rdfs:label "Вертикальные углы"@ru
@@ -1517,7 +1523,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7jc8DEcWPTzziRoaIBASTm>
 Class: <http://ontomathpro.org/ontomathedu#R7jrtwwWVnDF19SitebtXho>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Area_of_a_circle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Area_of_a_circle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Площадь_круга>,
         rdfs:label "Area of a circle"@en,
         rdfs:label "Площадь круга"@ru,
@@ -1530,19 +1536,19 @@ Class: <http://ontomathpro.org/ontomathedu#R7jrtwwWVnDF19SitebtXho>
 Class: <http://ontomathpro.org/ontomathedu#R7k0aWESrGZE01BlbbSKyAX>
 
     Annotations: 
-        rdfs:label "Distance between point and circle"@en,
+        rdfs:label "Distance between a point and a circle"@en,
         rdfs:label "Нокта һәм әйләнә арасындагы ераклык"@tt,
         rdfs:label "Расстояние между точкой и окружностью"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#RDlyk0BV0hyYllNfizZD1KW>
+        ome:R8WR60wsNklHjl4NGzXRR8s
     
     
 Class: <http://ontomathpro.org/ontomathedu#R7kvozgDvAz6YYbEnLglWjy>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8-p>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Cevian>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Cevian>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Чевиана>,
         rdfs:label "Cevian of a triangle"@en,
         rdfs:label "Чевиана треугольника"@ru,
@@ -1594,7 +1600,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7orchSNuihsPU7tFPL00I5>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8-p>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Simple_polygon>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Simple_polygon>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Простой_многоугольник>,
         rdfs:label "Simple polygon"@en,
         rdfs:label "Гади күппочмак"@tt,
@@ -1657,7 +1663,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7rUr3Rm6XNidtbtyB4Dd1>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/nachalnye-geometricheskie-svedeniia-14930/perpendikuliarnye-priamye-9886/re-3cce9aa8-9bff-4fa4-b214-017612e69d4a>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Angle#Vertical_and_adjacent_angle_pairs>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Angle#Vertical_and_adjacent_angle_pairs>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Смежные_углы>,
         rdfs:label "Adjacent angles"@en,
         rdfs:label "Смежные углы"@ru,
@@ -1670,7 +1676,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7rUr3Rm6XNidtbtyB4Dd1>
 Class: <http://ontomathpro.org/ontomathedu#R7sh7TMNDpf72fuPGXViVYd>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Bisection#Line_segment_bisector>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Bisection#Line_segment_bisector>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Серединный_перпендикуляр>,
         rdfs:label "Perpendicular bisector to a segment"@en,
         rdfs:label "Кисемтәгә урта перпендикуляр"@tt,
@@ -1684,6 +1690,8 @@ Class: <http://ontomathpro.org/ontomathedu#R7sh7TMNDpf72fuPGXViVYd>
 Class: <http://ontomathpro.org/ontomathedu#R7t2o29BlK6anmcZ3qR50bJ>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
         rdfs:label "Problem of constructing a triangle given two sides and the included angle"@en,
         rdfs:label "Задача о построении циркулем и линейкой треугольника по двум сторонам и углу между ними"@ru,
         rdfs:label "Өчпочмакны ике як һәм алар арасындагы почмак буенча циркуль һәм линейка белән төзү турында мәсьәлә"@tt
@@ -1718,7 +1726,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7tWICxIeiRox39IcfYp6PI>
 Class: <http://ontomathpro.org/ontomathedu#R7tkHlPOvly15CHSXyFpRXE>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Angle_trisection>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Angle_trisection>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Трисекция_угла>,
         rdfs:label "Angle trisection problem"@en,
         rdfs:label "Задача о трисекции угла"@ru,
@@ -1742,6 +1750,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7uZL4pV4UXKYlXS3ETVzRr>
 Class: <http://ontomathpro.org/ontomathedu#R7vovewBPd0ZizW7D1UK0E4>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9-p>,
         ome:eduRefRus <https://dic.academic.ru/dic.nsf/ruwiki/1073471>,
         ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/glava-16/teorema-ob-okrujnosti-eilera/>,
         rdfs:label "Theorem about nine-point circle of a triangle"@en,
@@ -1766,6 +1775,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7wpSi7mnN1BRCtsipFAz3l>
 Class: <http://ontomathpro.org/ontomathedu#R7xOCXOmQMtwSDkKV5U6cSP>
 
     Annotations: 
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-8-vzaimnoe-raspolojenie-okrujnostei/взаимное-расположение-двух-окружнос/>,
         rdfs:label "Mutual arrangement of two circles"@en,
         rdfs:label "Взаимное расположение двух окружностей"@ru,
         rdfs:label "Ике әйләнәнең үзара торышы"@tt
@@ -1773,6 +1783,9 @@ Class: <http://ontomathpro.org/ontomathedu#R7xOCXOmQMtwSDkKV5U6cSP>
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RmuFM3OKE5cOHrojHfV2P2>,
         ome:hasArgument exactly 2 <http://ontomathpro.org/ontomathedu#RQ7LKQ7HoanUKcnirYtQjJ>
+    
+    DisjointUnionOf: 
+        <http://ontomathpro.org/ontomathedu#RCDXDwJA0Ivl1DAtlq7WyH8>, ome:R94sCsH4Qq9TPEkfN3owAKG, ome:RB0FaOEtqZCKJOsSqTAqnzn
     
     
 Class: <http://ontomathpro.org/ontomathedu#R7xfqlJYSY5Oj6zgTC4TM9>
@@ -1801,7 +1814,7 @@ Class: <http://ontomathpro.org/ontomathedu#R7y8ACOMjB7tTHGdfl3jQct>
 Class: <http://ontomathpro.org/ontomathedu#R7zDQz98GQXSB7CK2A9lrri>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Homothetic_transformation>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Homothetic_transformation>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Гомотетия>,
         rdfs:label "Homothetic transformation"@en,
         rdfs:label "Гомотетия"@ru,
@@ -1875,7 +1888,7 @@ Class: <http://ontomathpro.org/ontomathedu#R81puoDaG8DotyXihsGWNY6>
 
     Annotations: 
         ome:eduRefEn <https://www.mathsisfun.com/geometry/square.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Square>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Square>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Квадрат>,
         rdfs:label "Regular quadrilateral"@en,
         rdfs:label "Square"@en,
@@ -1895,7 +1908,7 @@ Class: <http://ontomathpro.org/ontomathedu#R82QQH8ctsSxNqrqk8wuWDc>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/nachalnye-geometricheskie-svedeniia-14930/perpendikuliarnye-priamye-9886/re-3cce9aa8-9bff-4fa4-b214-017612e69d4a>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Perpendicular>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Perpendicular>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Перпендикулярность>,
         rdfs:label "Perpendicular lines"@en,
         rdfs:label "Перпендикуляр турылар"@tt,
@@ -1931,6 +1944,7 @@ Class: <http://ontomathpro.org/ontomathedu#R835PklE1dBhGMS2un6Vi61>
 Class: <http://ontomathpro.org/ontomathedu#R83WIEf7bZTLXk0qN0KQFQb>
 
     Annotations: 
+        rdfs:label "Икенче  почмактан кечкенәрәк кисемтә"@tt,
         rdfs:label "Угол меньше другого угла"@ru
     
     SubClassOf: 
@@ -1951,7 +1965,9 @@ Class: <http://ontomathpro.org/ontomathedu#R84ImkIkTnD3nuiws5I7Ce7>
 Class: <http://ontomathpro.org/ontomathedu#R84fs2WCfMPAhVmXSHQCWex>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Incircle_and_excircles_of_a_triangle#Excircles_and_excenters>,
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8-p>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-6-vidi-okrujnostei/vnevpisannie-okrujnosti-opredelenie/>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Incircle_and_excircles_of_a_triangle#Excircles_and_excenters>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Вписанная_и_вневписанные_в_треугольник_окружности#Вневписанные_окружности>,
         rdfs:label "Escribed circle of a triangle"@en,
         rdfs:label "Excircle of a triangle"@en,
@@ -1966,6 +1982,8 @@ Class: <http://ontomathpro.org/ontomathedu#R84fs2WCfMPAhVmXSHQCWex>
 Class: <http://ontomathpro.org/ontomathedu#R84gJhWNJH451mdaMjXTXhu>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Theorem about uniqueness of perpendicular drawn from a point to a line"@en,
         rdfs:label "Ноктадан турыга бердәнбер перпендикуляр үткәрү турында теорема"@tt,
         rdfs:label "Теорема о единственности перпендикуляра, проведенного из точки к прямой"@ru
@@ -2030,14 +2048,14 @@ Class: <http://ontomathpro.org/ontomathedu#R85s9x6tS0fEd5zfY3wBrWH>
         rdfs:label "Планиметриядә билгеләнми торган төшенчә"@tt
     
     SubClassOf: 
-        ome:RBJ17uigIxIF6XkATvY18Rn
+        ome:R9hUrLZSgt21lDxaTDI2fGT
     
     
 Class: <http://ontomathpro.org/ontomathedu#R86AXgDuXNbEwvncfp9IfcZ>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Isosceles_triangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Isosceles_triangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Равнобедренный_треугольник>,
         rdfs:label "Isosceles triangle"@en,
         rdfs:label "Равнобедренный треугольник"@ru,
@@ -2101,7 +2119,7 @@ Class: <http://ontomathpro.org/ontomathedu#R88yQYZN4CK3ENdOanmYVj6>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Pythagorean_theorem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Pythagorean_theorem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_Пифагора>,
         rdfs:label "Pythagorean theorem"@en,
         rdfs:label "Пифагор теоремасы"@tt,
@@ -2137,6 +2155,8 @@ Class: <http://ontomathpro.org/ontomathedu#R8AEmqjtAfOJjGLWd5aWtUY>
 Class: <http://ontomathpro.org/ontomathedu#R8Cgr8sznuTj3U3R5s1oYXT>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/vpisannaia-i-opisannaia-okruzhnosti-9244/re-44ec2b8e-dc52-456f-a0dc-69a012de326f>,
         rdfs:label "Mutual arrangement of an inscribed triangle and a circumscribed circle"@en,
         rdfs:label "Взаимное расположение вписанного треугольника и описанной окружности треугольника"@ru,
         rdfs:label "Камалган өчпочмак һәм өчпочмакны камаучы әйләнәнең үзара торышы"@tt
@@ -2152,7 +2172,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8DEUcLwRkE96UVQCLdPIN8>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.webmath.ru/poleznoe/formules_17_5.php>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Right_angle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Right_angle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Прямой_угол>,
         rdfs:label "Right angle"@en,
         rdfs:label "Прямой угол"@ru,
@@ -2241,7 +2261,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8JLTCqh1OUh6qCcce5zlwu>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Hypotenuse>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Hypotenuse>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Гипотенуза>,
         rdfs:label "Hypotenuse"@en,
         rdfs:label "Гипотенуза"@ru,
@@ -2382,7 +2402,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8QxdcedrYACfMqjQQhnAuA>
 Class: <http://ontomathpro.org/ontomathedu#R8SEH97ydnEMkx5ZopqSJ4s>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Sliding_T_bevel>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Sliding_T_bevel>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Малка_(инструмент)>,
         rdfs:label "Miter square"@en,
         rdfs:label "Малка"@ru,
@@ -2407,7 +2427,9 @@ Class: <http://ontomathpro.org/ontomathedu#R8UBW74TgQDGRAMM7dWMeZC>
 Class: <http://ontomathpro.org/ontomathedu#R8WaZFxL1Si6oKRqWrJi6dI>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Tangent_lines_to_circles#Tangent_lines_to_one_circle>,
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Tangent_lines_to_circles#Tangent_lines_to_one_circle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Касательная_прямая_к_окружности>,
         rdfs:label "Tangent line to a circle"@en,
         rdfs:label "Касательная прямая к окружности"@ru,
@@ -2423,7 +2445,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8Wg8s11Sb2fyZwIeuhY5mo>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-d>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Golden_ratio>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Golden_ratio>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Золотое_сечение>,
         rdfs:label "Golden ratio"@en,
         rdfs:label "Алтын киселеш"@tt,
@@ -2546,7 +2568,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8bXnaTM9tBSSyVXZRtJJeG>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Line_segment>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Line_segment>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Отрезок>,
         rdfs:label "Line segment"@en,
         rdfs:label "Кисемтә"@tt,
@@ -2561,7 +2583,8 @@ Class: <http://ontomathpro.org/ontomathedu#R8dXvfsBlwyHED2Bea0I5dd>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/arc.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Arc_(geometry)>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-7-okrujnost-i-ugli/duga-okrujnosti-i-centralnii-ugol/>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Arc_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Дуга_окружности>,
         rdfs:label "Arc of a circle"@en,
         rdfs:label "Дуга окружности"@ru,
@@ -2586,7 +2609,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8gA41IJfAYpPGRQdmzRCXd>
 Class: <http://ontomathpro.org/ontomathedu#R8ge9lQFrdb1oYcWU9SagbL>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Angle#Measuring_angles>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Angle#Measuring_angles>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Угол#Угловая_мера>,
         rdfs:label "Measurement unit of an angle"@en,
         rdfs:label "Единица измерения угла"@ru,
@@ -2634,7 +2657,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8iOESQ3J9SrJuQFqvVLIKx>
 Class: <http://ontomathpro.org/ontomathedu#R8jNQIMtjTiygB5zUc8P105>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Homothetic_transformation>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Homothetic_transformation>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Гомотетия#Свойства>,
         rdfs:label "Coefficient of homothety"@en,
         rdfs:label "Гомотетия коэффициенты"@tt,
@@ -2710,7 +2733,8 @@ Class: <http://ontomathpro.org/ontomathedu#R8p239oS8KadPcsGL3JMTec>
 
     Annotations: 
         rdfs:label "Associative axiom for an addition of three vectors"@en,
-        rdfs:label "Аксиома ассоциативности при сложении трех векторов"@ru
+        rdfs:label "Аксиома ассоциативности при сложении трех векторов"@ru,
+        rdfs:label "Өч векторларны кушканда ассоциативлык аксиомасы"@tt
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RCfIWGc2O1hDnct8A9d9yKo>
@@ -2765,8 +2789,8 @@ Class: <http://ontomathpro.org/ontomathedu#R8qeBB2qYkTej0cIwvAarqA>
 
     Annotations: 
         rdfs:label "Euler's formula about the distance between the centers of an inscribed and circumscribed circles"@en,
-        rdfs:label "Формула Эйлера о расстоянии между центрами вписанной и описанной окружности"@ru,
-        rdfs:label "Эйлер формуласы"@tt
+        rdfs:label "Камалган һәм камаучы әйләнәләрнең урталары арасындагы ераклык турында Эйлер формуласы"@tt,
+        rdfs:label "Формула Эйлера о расстоянии между центрами вписанной и описанной окружности"@ru
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RD1pIb3DnsdR988ULnXWqLM>
@@ -2797,7 +2821,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8rLVd1jFR9WONEWJHeFVlb>
 Class: <http://ontomathpro.org/ontomathedu#R8ruHZVo0OYFyJPkxrxZfPo>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Point_reflection>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Point_reflection>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Центральная_симметрия>,
         rdfs:label "Point reflection"@en,
         rdfs:label "Центральная симметрия"@ru,
@@ -2827,7 +2851,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8t0zYavWD6tgxVSrglu7c7>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Circle#Length_of_circumference>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Circle#Length_of_circumference>,
         rdfs:label "Length of a circle"@en,
         rdfs:label "Длина окружности"@ru,
         rdfs:label "Әйләнә озынлыгы"@tt
@@ -2876,7 +2900,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8vmg74ObB7zU98UutSPL8L>
 Class: <http://ontomathpro.org/ontomathedu#R8vzf7REZUvzaBoAxbfNK0>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Centroid>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Centroid>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Центроид_треугольника>,
         rdfs:comment "Centroid"@en,
         rdfs:label "Intersection point of a triangle medians"@en,
@@ -2910,6 +2934,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8wZdiJQtgYOfZCNLG7yonK>
         rdfs:label "Өчпочмакның урта перпендикулярлары кисешкән нокта"@tt
     
     SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo,
         <http://ontomathpro.org/ontomathedu#RDeZTnXKfLt1VnYlmxIODEn>,
         ome:ontologicallyDependsOn some <http://ontomathpro.org/ontomathedu#Rp6OWQNKRbpfu6zgkJaPRz>
     
@@ -2951,7 +2976,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8xYNmuu07Is15HeffovB7s>
 Class: <http://ontomathpro.org/ontomathedu#R8xcUrtno3P13Cp5xjIWlWP>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Astrolabe>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Astrolabe>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Астролябия>,
         rdfs:label "Astrolabe"@en,
         rdfs:label "Астролябия"@ru,
@@ -2965,7 +2990,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8y8kZsv6uJcnqlXkOv1nhR>
 
     Annotations: 
         ome:eduRefEn <https://www.mathsisfun.com/geometry/parabola.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Parabola>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Parabola>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Парабола>,
         rdfs:label "Parabola"@en,
         rdfs:label "Парабола"@ru,
@@ -2992,6 +3017,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8yJ1pEA7uXTQQ8OnMTBXc6>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Angle bisector intersection theorem of triangle"@en,
         rdfs:label "Теорема о пересечении биссектрис треугольника"@ru,
         rdfs:label "Өчпочмак биссектрисалары кисешүе турындагы теорема"@tt
@@ -3005,7 +3031,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8yeUGPqcyhDJIdO6v93apk>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:hasPrerequisite "Четырехугольник"^^xsd:string,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Diagonal#Polygons>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Diagonal#Polygons>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Диагональ#Многоугольники_и_многогранники>,
         rdfs:label "Diagonal of a polygon"@en,
         rdfs:label "Диагональ  многоугольника"@ru,
@@ -3033,7 +3059,7 @@ Class: <http://ontomathpro.org/ontomathedu#R8ys50LoPWK9PnjXkBwXkPj>
 Class: <http://ontomathpro.org/ontomathedu#R8zj8qq04Ul8leGLAAo6nry>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Pythagorean_trigonometric_identity>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Pythagorean_trigonometric_identity>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Основное_тригонометрическое_тождество>,
         rdfs:label "Basic trigonometric identity"@en,
         rdfs:label "Основное тригонометрическое тождество"@ru,
@@ -3059,7 +3085,7 @@ Class: <http://ontomathpro.org/ontomathedu#R91XcCalOIvvwyqWdf2fXMS>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Vertex_(geometry)#Of_a_polytope>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Vertex_(geometry)#Of_a_polytope>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Вершина_(геометрия)#Вершина_многоугольника_многогранника>,
         rdfs:label "Vertex of a polygon"@en,
         rdfs:label "Вершина многоугольника"@ru,
@@ -3099,7 +3125,7 @@ Class: <http://ontomathpro.org/ontomathedu#R97AJOIwjOfj8bnVIChRSCL>
 Class: <http://ontomathpro.org/ontomathedu#R97QTevoNUAJBnFgx5PxPxx>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Semiperimeter#Triangles>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Semiperimeter#Triangles>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Полупериметр#Треугольники>,
         rdfs:label "Semiperimeter of a triangle"@en,
         rdfs:label "Полупериметр треугольника"@ru,
@@ -3112,12 +3138,16 @@ Class: <http://ontomathpro.org/ontomathedu#R97QTevoNUAJBnFgx5PxPxx>
 Class: <http://ontomathpro.org/ontomathedu#R988zD0uLSsaD8CUeV1hm5a>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-e9839d77-0fea-4474-ac42-9666b615c337>,
+        ome:hasPrerequisite "Вектор"^^xsd:string,
         rdfs:label "Collinear vectors"@en,
         rdfs:label "Коллинеар векторлар"@tt,
         rdfs:label "Коллинеарные векторы"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>
+        <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>,
+        ome:hasArgument min 2 <http://ontomathpro.org/ontomathedu#R9FRdi631i64TmzJvcyRfMH>
     
     
 Class: <http://ontomathpro.org/ontomathedu#R98NOBkpdDlZhXfZ0cV9OWA>
@@ -3147,7 +3177,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9913IEtkSREWPNYlPmkLbX>
 Class: <http://ontomathpro.org/ontomathedu#R993de3EiqJtSK33yFG5YKW>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Angular_unit>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Angular_unit>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Угол#Угловая_мера>,
         rdfs:label "Angular measure"@en,
         rdfs:label "Мера угла"@ru,
@@ -3194,7 +3224,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9Cmytgs67tyr10XcuQ7uOQ>
 Class: <http://ontomathpro.org/ontomathedu#R9CoEFz5au086clq3BuAyum>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Law_of_sines>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Law_of_sines>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_синусов>,
         rdfs:label "Sine rule"@en,
         rdfs:label "Синуслар теоремасы"@tt,
@@ -3244,7 +3274,8 @@ Class: <http://ontomathpro.org/ontomathedu#R9FRdi631i64TmzJvcyRfMH>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Euclidean_vector>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-4ae7c552-db81-4f01-a370-09e6e71a4efd>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Euclidean_vector>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Вектор_(геометрия)>,
         rdfs:label "Vector"@en,
         rdfs:label "Вектор"@ru,
@@ -3268,12 +3299,15 @@ Class: <http://ontomathpro.org/ontomathedu#R9Fq1fMGZwJMGezsW2XX8pN>
 Class: <http://ontomathpro.org/ontomathedu#R9Hqgf5QS70UKNgdaAzN8UI>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-e9839d77-0fea-4474-ac42-9666b615c337>,
         rdfs:label "Co-directional vectors"@en,
         rdfs:label "Бердәй юнәлешле векторлар"@tt,
         rdfs:label "Сонаправленные векторы"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>
+        <http://ontomathpro.org/ontomathedu#R988zD0uLSsaD8CUeV1hm5a>,
+        ome:hasArgument min 2 <http://ontomathpro.org/ontomathedu#R9FRdi631i64TmzJvcyRfMH>
     
     
 Class: <http://ontomathpro.org/ontomathedu#R9I99WwjZIk9KQIQs7Of1GE>
@@ -3293,7 +3327,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9Ijvq5LfedUllozZUi99iw>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Perimeter#Polygons>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Perimeter#Polygons>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Периметр#Многоугольники>,
         rdfs:label "Perimeter of a polygon"@en,
         rdfs:label "Күппочмак периметры"@tt,
@@ -3422,7 +3456,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9NA26yksr71YxnCOOz0Gkb>
 Class: <http://ontomathpro.org/ontomathedu#R9Ni6zjK81mgPjB8VmB4Hlx>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Theodolite>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Theodolite>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теодолит>,
         rdfs:label "Theodolite"@en,
         rdfs:label "Теодолит"@ru,
@@ -3499,8 +3533,8 @@ Class: <http://ontomathpro.org/ontomathedu#R9QpXxgpl13Y2hA0XTRNn0m>
     Annotations: 
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_Фейербаха>,
         rdfs:label "Feuerbach's theorem about tangents of an inscribed, described, escribed and a circle of nine points"@en,
-        rdfs:label "Теорема Фейербаха о касаниях вписанной, описанной, вневписанной и окружности девяти точек"@ru,
-        rdfs:label "Фейербах теоремасы"@tt
+        rdfs:label "Камаулы әйләнә, камаучы әйләнә, камалмаган әйләнә һәм тугыз нокта әйләнәсе орынуы турында Фейербах теоремасы"@tt,
+        rdfs:label "Теорема Фейербаха о касаниях вписанной, описанной, вневписанной и окружности девяти точек"@ru
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RD1pIb3DnsdR988ULnXWqLM>
@@ -3535,7 +3569,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9RlIeAHdKBcgCvNHSQkvTm>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/parallelogram.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Parallelogram>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Parallelogram>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Параллелограмм>,
         rdfs:label "Parallelogram"@en,
         rdfs:label "Параллелограмм"@ru,
@@ -3605,7 +3639,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9WUc9CMg4WNaI83CgQ5UZY>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Vertex_(geometry)#Of_an_angle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Vertex_(geometry)#Of_an_angle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Вершина_(геометрия)#Вершина_угла>,
         rdfs:label "Vertex of an angle"@en,
         rdfs:label "Вершина угла"@ru,
@@ -3703,6 +3737,8 @@ Class: <http://ontomathpro.org/ontomathedu#R9aIfMDWOwoDsErXgpWawC>
 Class: <http://ontomathpro.org/ontomathedu#R9aujf7c1UvnIamgvIXKKH1>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-8-vzaimnoe-raspolojenie-okrujnostei/kasanie-okrujnostei/>,
         rdfs:label "External touching of circles"@en,
         rdfs:label "Externally tangent circles"@en,
         rdfs:label "Окружности касаются внешним образом"@ru,
@@ -3762,13 +3798,14 @@ Class: <http://ontomathpro.org/ontomathedu#R9cHRvs1aJFmy4uenoOY494>
 Class: <http://ontomathpro.org/ontomathedu#R9cVR48ScDqDmqBXO1E4bh7>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-d>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Окружность#Концентрические_и_ортогональные_окружности>,
         rdfs:label "Orthogonal circles"@en,
         rdfs:label "Ортогональ әйләнәләр"@tt,
         rdfs:label "Ортогональные окружности"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R7xOCXOmQMtwSDkKV5U6cSP>
+        ome:RB0FaOEtqZCKJOsSqTAqnzn
     
     
 Class: <http://ontomathpro.org/ontomathedu#R9dbR7f7FDqEcJDO1weNIdQ>
@@ -3810,6 +3847,8 @@ Class: <http://ontomathpro.org/ontomathedu#R9fkPPXnw8t3lN7sDlgRmA0>
 Class: <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-e9839d77-0fea-4474-ac42-9666b615c337>,
         rdfs:label "Mutual arrangement of vectors"@en,
         rdfs:label "Векторларның үзара торышы"@tt,
         rdfs:label "Взаимное расположение векторов"@ru
@@ -3826,7 +3865,8 @@ Class: <http://ontomathpro.org/ontomathedu#R9h2eCeLMtqWQpa5bd7X00y>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Null_vector>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-4ae7c552-db81-4f01-a370-09e6e71a4efd>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Null_vector>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Нулевой_вектор>,
         rdfs:label "Zero vector"@en,
         rdfs:label "Нулевой вектор"@ru,
@@ -3873,6 +3913,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9jqtK1Y4t7UmBoeVgbMwjz>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Theorem about the intersection of altitudes of a triangle"@en,
         rdfs:label "Теорема о пересечении высот треугольника"@ru,
         rdfs:label "Өчпочмак биеклекләре кисешүе турындагы теорема"@tt
@@ -3931,7 +3972,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9lMyAYbMeEYN0OdD7cbwZ6>
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/angles.html>,
         ome:eduRefRus <https://www.webmath.ru/poleznoe/formules_17_5.php>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Angle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Angle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Угол>,
         rdfs:label "Angle"@en,
         rdfs:label "Почмак"@tt,
@@ -3948,6 +3989,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9m1whbvL7vLxSljR6x7Yvm>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        rdfs:label "Икенче кисемтәдән кечкенәрәк кисемтә"@tt,
         rdfs:label "Отрезок меньше другого отрезка"@ru
     
     SubClassOf: 
@@ -4001,7 +4043,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9p8Q7DjYOhxHFfEaaX2i8V>
 Class: <http://ontomathpro.org/ontomathedu#R9pCtmxjQfK7z2elPNQmnCj>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Euclidean_vector#Length>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Euclidean_vector#Length>,
         rdfs:label "Vector length"@en,
         rdfs:label "Вектор озынлыгы"@tt,
         rdfs:label "Длина вектора"@ru
@@ -4081,7 +4123,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9sEvuLmf8QJywE9cmX19vw>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/treugolniki-glava-8/opredelenie-bissektrisi-treugolnika/>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Bisection#Triangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Bisection#Triangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Биссектриса#Длина_биссектрис_в_треугольнике>,
         rdfs:label "Angle bisector of a triangle"@en,
         rdfs:label "Биссектриса треугольника"@ru,
@@ -4109,7 +4151,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9tiOcllicRJ2AIUwYEqEWM>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Try_square>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Try_square>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Угольник>,
         rdfs:label "Elbow"@en,
         rdfs:label "Почмаклык"@tt,
@@ -4122,6 +4164,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9tiOcllicRJ2AIUwYEqEWM>
 Class: <http://ontomathpro.org/ontomathedu#R9txvsrhdtKIPZbzRMaXbfV>
 
     Annotations: 
+        <http://ontomathpro.org/ontomathedu#aboutness> <http://ontomathpro.org/ontomathedu#RCG20ZmSKxxvgSrSfCSs5oM>,
         rdfs:label "Heron's formula for triangle"@en,
         rdfs:label "Theorem about area a triangle with given three sides"@en,
         rdfs:label "Теорема о площади треугольника по сторонам"@ru,
@@ -4136,7 +4179,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9txvsrhdtKIPZbzRMaXbfV>
 Class: <http://ontomathpro.org/ontomathedu#R9uRwl7fj87qDxyZ5EQPusC>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Fagnano%27s_problem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Fagnano%27s_problem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A4%D0%B0%D0%BD%D1%8C%D1%8F%D0%BD%D0%BE>,
         rdfs:label "Fagnano's problem"@en,
         rdfs:label "Problem about the triangle of the smallest perimeter inscribed in a triangle"@en,
@@ -4164,7 +4207,7 @@ Class: <http://ontomathpro.org/ontomathedu#R9vTtxLmTNcdGZA42dcgk1h>
 Class: <http://ontomathpro.org/ontomathedu#R9vdhzjPL4KlP9st9wTYJ12>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Circular_sector>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Circular_sector>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Сектор_(геометрия)>,
         rdfs:label "Circular sector"@en,
         rdfs:label "Круговой сектор"@ru,
@@ -4212,19 +4255,21 @@ Class: <http://ontomathpro.org/ontomathedu#R9wqCrcojX1vTi7YGXIdzQ>
 Class: <http://ontomathpro.org/ontomathedu#R9wvvfgMtBOmZvtokNHrgVz>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
         rdfs:label "Oppositely directed vectors"@en,
         rdfs:label "Капма-каршы юнәлешле векторлар"@tt,
         rdfs:label "Противоположно направленные векторы"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>
+        <http://ontomathpro.org/ontomathedu#R988zD0uLSsaD8CUeV1hm5a>,
+        ome:hasArgument exactly 2 <http://ontomathpro.org/ontomathedu#R9FRdi631i64TmzJvcyRfMH>
     
     
 Class: <http://ontomathpro.org/ontomathedu#R9x3QFCyHrHe0SoE3ZCZr94>
 
     Annotations: 
         ome:eduRefEn <https://www.mathsisfun.com/geometry/rectangle.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Rectangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Rectangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Прямоугольник>,
         rdfs:label "Rectangle"@en,
         rdfs:label "Прямоугольник"@ru,
@@ -4341,6 +4386,9 @@ Class: <http://ontomathpro.org/ontomathedu#RB0VqNNOSWAaEcyKZpkvVSp>
         ome:hasArgument exactly 1 <http://ontomathpro.org/ontomathedu#R71GKMyesTQoOWWvX1M74EE>,
         ome:hasArgument exactly 1 <http://ontomathpro.org/ontomathedu#RQ7LKQ7HoanUKcnirYtQjJ>
     
+    DisjointUnionOf: 
+        <http://ontomathpro.org/ontomathedu#%D0%A2%D0%BE%D1%87%D0%BA%D0%B0%D0%9F%D1%80%D0%B8%D0%BD%D0%B0%D0%B4%D0%BB%D0%B5%D0%B6%D0%B8%D1%82%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8>, ome:RDFH6PcwRBqOAcCG4qckl8d
+    
     
 Class: <http://ontomathpro.org/ontomathedu#RB0qoGO2x906qew4sKIDofp>
 
@@ -4395,7 +4443,7 @@ Class: <http://ontomathpro.org/ontomathedu#RB3N60EHHu50mbwGdRoxOkc>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/rhombus.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Rhombus>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Rhombus>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Ромб>,
         rdfs:label "Rhombus"@en,
         rdfs:label "Ромб"@ru,
@@ -4423,7 +4471,7 @@ Class: <http://ontomathpro.org/ontomathedu#RB4fr33ViThYa8Jl6VzSTso>
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:hasPrerequisite "Окружность"^^xsd:string,
         ome:hasPrerequisite "Угол"^^xsd:string,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Central_angle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Central_angle>,
         rdfs:label "Central angle"@en,
         rdfs:label "Центральный угол окружности"@ru,
         rdfs:label "Әйләнәнең үзәк почмагы"@tt
@@ -4436,7 +4484,7 @@ Class: <http://ontomathpro.org/ontomathedu#RB4fr33ViThYa8Jl6VzSTso>
 Class: <http://ontomathpro.org/ontomathedu#RB4mxvhTZstnfNhY5lsReLw>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Eccentricity_(mathematics)#Ellipses>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Eccentricity_(mathematics)#Ellipses>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Эксцентриситет#Свойства>,
         rdfs:label "Eccentricity of an ellipse"@en,
         rdfs:label "Эксцентриситет эллипса"@ru,
@@ -4449,7 +4497,7 @@ Class: <http://ontomathpro.org/ontomathedu#RB4mxvhTZstnfNhY5lsReLw>
 Class: <http://ontomathpro.org/ontomathedu#RB5DocWH7GEFLwNbZ5g20hT>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Marking_gauge>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Marking_gauge>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Рейсмус>,
         rdfs:label "Shifting gage"@en,
         rdfs:label "Рейсмус"@ru,
@@ -4457,17 +4505,6 @@ Class: <http://ontomathpro.org/ontomathedu#RB5DocWH7GEFLwNbZ5g20hT>
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RQs9HmKGVVOFjN5OA8Yolw>
-    
-    
-Class: <http://ontomathpro.org/ontomathedu#RB5E7Sh0ZS5eQs0DRUsKOGu>
-
-    Annotations: 
-        rdfs:label "Tangent segment of two circles"@en,
-        rdfs:label "Ике әйләнә орынмасының кисемтәсе"@tt,
-        rdfs:label "Отрезок касательной двух окружностей"@ru
-    
-    SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#RBvNWOj2ewV9gKcipBmpvSB>
     
     
 Class: <http://ontomathpro.org/ontomathedu#RB5dgc6lXfQykVSoUbSBQ1G>
@@ -4496,7 +4533,7 @@ Class: <http://ontomathpro.org/ontomathedu#RB5szuCSGWEAZJQXSVWxA1Y>
 Class: <http://ontomathpro.org/ontomathedu#RB6ez9ZMEvCLqXUzYQICtBT>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Tape_measure>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Tape_measure>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Рулетка_(инструмент)>,
         rdfs:label "Roulette"@en,
         rdfs:label "Рулетка"@ru,
@@ -4617,7 +4654,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBEF9FGD2JIOVTman43cg7O>
 Class: <http://ontomathpro.org/ontomathedu#RBEXP85H7rF8NK9orVbZ84E>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Curve>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Curve>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Кривая>,
         rdfs:label "Curve"@en,
         rdfs:label "Кривая"@ru,
@@ -4708,6 +4745,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBM3GKt9fzdNeIw5kQY9Lwc>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Theorem of the altitude of an isosceles triangle drawn to the base"@en,
         rdfs:label "Теорема о высоте равнобедренного треугольника, проведенной к основанию"@ru,
         rdfs:label "Тигезъянлы өчпочмакның нигезенә үткәрелгән биеклек турында теорема"@tt
@@ -4756,6 +4794,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBNDM8YGr7KN1dscmdNpDhO>
 Class: <http://ontomathpro.org/ontomathedu#RBNogS3ZP2fC6esBsO8fT3I>
 
     Annotations: 
+        rdfs:label "Икенче почмактан зуррак почмак"@tt,
         rdfs:label "Угол больше другого угла"@ru
     
     SubClassOf: 
@@ -4823,7 +4862,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBQatrEUb4Skrfs26C3sbFt>
 Class: <http://ontomathpro.org/ontomathedu#RBQzT4lsrXEY083U6lumx6o>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Circular_segment>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Circular_segment>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Сегмент_(геометрия)>,
         rdfs:label "Circular segment"@en,
         rdfs:label "Круговой сегмент"@ru,
@@ -4836,7 +4875,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBQzT4lsrXEY083U6lumx6o>
 Class: <http://ontomathpro.org/ontomathedu#RBRwmR6Ir8W1jqfDonmudbx>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Rotation_(mathematics)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Rotation_(mathematics)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Поворот>,
         rdfs:label "Rotation"@en,
         rdfs:label "Бору"@tt,
@@ -4897,6 +4936,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBUwjT7JBGkyRHsLZLSF22y>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        rdfs:label "Икенче кисемтәдән зуррак кисемтә"@tt,
         rdfs:label "Отрезок больше другого отрезка"@ru
     
     SubClassOf: 
@@ -4954,7 +4994,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBY1FN1QlrXte9IAZXVn9Dp>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Intercept_theorem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Intercept_theorem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_Фалеса>,
         rdfs:label "Intercept theorem"@en,
         rdfs:label "Теорема Фалеса"@ru,
@@ -4978,7 +5018,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBY4QWI3i4kfkTuiOObT0H7>
 Class: <http://ontomathpro.org/ontomathedu#RBZTpicxNM7cbhnJJ1IRNyX>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Axial_symmetry>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Axial_symmetry>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Осевая_симметрия>,
         rdfs:label "Axial symmetry"@en,
         rdfs:label "Күчәрле симметрия"@tt,
@@ -5000,21 +5040,11 @@ Class: <http://ontomathpro.org/ontomathedu#RBZaIaFzGDFwk2SfBj6i3nT>
         <http://ontomathpro.org/ontomathedu#RC9eOh5hUZXhq9kvorYalIK>
     
     
-Class: <http://ontomathpro.org/ontomathedu#RBbLDyJwVNcB3DxWVUa9MOk>
-
-    Annotations: 
-        rdfs:label "Euler's line theorem"@en,
-        rdfs:label "Теорема о прямой Эйлера"@ru,
-        rdfs:label "Эйлер турысы турында теорема"@tt
-    
-    SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#RCBJC9qSOBHoNp5IuERwYnb>
-    
-    
 Class: <http://ontomathpro.org/ontomathedu#RBcAMXFt0XP1AAXdwFbuQRH>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Circle_bundle>,
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-d>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Circle_bundle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Пучок_(геометрия)>,
         rdfs:label "Circle bundle"@en,
         rdfs:label "Пучок окружностей"@ru,
@@ -5049,7 +5079,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBcoUuCZnFc0CEkF3ZWJoPo>
 Class: <http://ontomathpro.org/ontomathedu#RBdro51f01uWkAVBSLtx9JR>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Archimedean_property>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Archimedean_property>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%81%D0%B8%D0%BE%D0%BC%D0%B0_%D0%90%D1%80%D1%85%D0%B8%D0%BC%D0%B5%D0%B4%D0%B0>,
         rdfs:label "Archimedean property"@en,
         rdfs:label "Архимед кагыйдәсе"@tt,
@@ -5065,13 +5095,14 @@ Class: <http://ontomathpro.org/ontomathedu#RBelCmpplDk7TIRhxd4FwIb>
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/treugolniki-glava-9/visota-treugolnika-osnovanie-visoti-ortocentr-treugolnika/>,
         ome:hasPrerequisite "Треугольник"^^xsd:string,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Altitude_(triangle)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Altitude_(triangle)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Высота_треугольника>,
         rdfs:label "Altitude of a triangle"@en,
         rdfs:label "Высота треугольника"@ru,
         rdfs:label "Өчпочмак биеклеге"@tt
     
     SubClassOf: 
+        ome:R7j4UlYslWXtxcu8kE9m7KT,
         <http://ontomathpro.org/ontomathedu#R7kvozgDvAz6YYbEnLglWjy>,
         ome:ontologicallyDependsOn some <http://ontomathpro.org/ontomathedu#RDE5zanRvaa9BRn3cYniCkv>
     
@@ -5079,7 +5110,9 @@ Class: <http://ontomathpro.org/ontomathedu#RBelCmpplDk7TIRhxd4FwIb>
 Class: <http://ontomathpro.org/ontomathedu#RBesIz6SUjZKFFuTDXkGhXo>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Straightedge_and_compass_construction>,
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Straightedge_and_compass_construction>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Построение_с_помощью_циркуля_и_линейки>,
         rdfs:label "Problem of constructing using а compass and а ruler"@en,
         rdfs:label "Задача на построение циркулем и линейкой"@ru,
@@ -5195,7 +5228,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBiutwDBgQKCqKtbYgCuOjo>
 Class: <http://ontomathpro.org/ontomathedu#RBmBJiJktTPaYzpKvXPR7hk>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Power_center_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Power_center_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Радикальный_центр>,
         rdfs:label "Power center"@en,
         rdfs:label "Radical center"@en,
@@ -5232,7 +5265,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBonCb1cTyjyNjGTYqd9fwO>
 Class: <http://ontomathpro.org/ontomathedu#RBouNw7WfNW1nj1sKDuC57H>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Apollonian_circles>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Apollonian_circles>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Окружность_Аполлония>,
         rdfs:label "Apollonian circle"@en,
         rdfs:label "Аполлоний әйләнә"@tt,
@@ -5257,7 +5290,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBrLpRFDCy9FTDhwqwrnKvZ>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8-p>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Menelaus%27s_theorem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Menelaus%27s_theorem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_Менелая>,
         rdfs:label "Menelaus's theorem"@en,
         rdfs:label "Менелай теоремасы"@tt,
@@ -5270,13 +5303,14 @@ Class: <http://ontomathpro.org/ontomathedu#RBrLpRFDCy9FTDhwqwrnKvZ>
 Class: <http://ontomathpro.org/ontomathedu#RBsYARpkCcH9JzSd8BqIbHQ>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Incenter>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Incenter>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Центр_вписанной_окружности>,
-        rdfs:label "Intersection point of a triangle bisectors"@en,
-        rdfs:label "Биссектрисалар кисешкән нокта"@tt,
-        rdfs:label "Точка пересечения биссектрис треугольника"@ru
+        rdfs:label "Intersection point of triangle bisectors"@en,
+        rdfs:label "Точка пересечения биссектрис треугольника"@ru,
+        rdfs:label "Өчпочмакның биссектрисалары кисешкән нокта"@tt
     
     SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo,
         <http://ontomathpro.org/ontomathedu#RDeZTnXKfLt1VnYlmxIODEn>,
         ome:ontologicallyDependsOn some <http://ontomathpro.org/ontomathedu#R9sEvuLmf8QJywE9cmX19vw>
     
@@ -5296,7 +5330,7 @@ Class: <http://ontomathpro.org/ontomathedu#RBtZedkWmJk25XRNWxIXMnD>
 Class: <http://ontomathpro.org/ontomathedu#RBtvpB6O4XVQUee1EaXs28v>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Euler_line#Triangle_centers_on_the_Euler_line>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Euler_line#Triangle_centers_on_the_Euler_line>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Прямая_Эйлера>,
         rdfs:label "Euler point"@en,
         rdfs:label "Точка Эйлера"@ru,
@@ -5470,7 +5504,7 @@ Class: <http://ontomathpro.org/ontomathedu#RC2wX8nHcrgWCTy6WZtZjuU>
         skos:altLabel "Система аксиом планиметрии"@ru
     
     SubClassOf: 
-        owl:Thing
+        ome:RBJ17uigIxIF6XkATvY18Rn
     
     
 Class: <http://ontomathpro.org/ontomathedu#RC2xAEpLbfCGCGbGjHUt4p7>
@@ -5488,7 +5522,7 @@ Class: <http://ontomathpro.org/ontomathedu#RC2xAEpLbfCGCGbGjHUt4p7>
 Class: <http://ontomathpro.org/ontomathedu#RC5rKXWq1IhmKtPDCbExJXf>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Projective_harmonic_conjugate>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Projective_harmonic_conjugate>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Гармоническая_четвёрка>,
         rdfs:label "Harmonic quadruple"@en,
         rdfs:label "Гармоническая четверка точек"@ru,
@@ -5538,7 +5572,7 @@ Class: <http://ontomathpro.org/ontomathedu#RC8BCWpb3yajOJgBZCMhiGn>
 Class: <http://ontomathpro.org/ontomathedu#RC9eJVkiZPM8gkz9MiQ30gS>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Eccentricity_(mathematics)#Hyperbolas>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Eccentricity_(mathematics)#Hyperbolas>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Эксцентриситет#Свойства>,
         rdfs:label "Eccentricity of a hyperbola"@en,
         rdfs:label "Гипербола эксцентриситеты"@tt,
@@ -5552,7 +5586,7 @@ Class: <http://ontomathpro.org/ontomathedu#RC9eOh5hUZXhq9kvorYalIK>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Polygonal_chain>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Polygonal_chain>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Ломаная>,
         rdfs:label "Polygonal line"@en,
         rdfs:label "Polyline"@en,
@@ -5605,6 +5639,8 @@ Class: <http://ontomathpro.org/ontomathedu#RCBjv77LE7lxsNRKHWdS7Jo>
 Class: <http://ontomathpro.org/ontomathedu#RCDXDwJA0Ivl1DAtlq7WyH8>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-8-vzaimnoe-raspolojenie-okrujnostei/kasanie-okrujnostei/>,
         rdfs:label "Touching circles"@en,
         rdfs:label "Касающиеся окружности"@ru,
         rdfs:label "Орынучы әйләнәләр"@tt
@@ -5617,7 +5653,8 @@ Class: <http://ontomathpro.org/ontomathedu#RCEGTuREyiQoJWMm5IHA5bm>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        rdfs:label <https://.org/wiki/Centre_(geometry)#Circles,_spheres,_and_segments>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        rdfs:label <https://en.wikipedia.org/wiki/Centre_(geometry)#Circles,_spheres,_and_segments>,
         rdfs:label "Center of a circle"@en,
         rdfs:label "Центр окружности"@ru,
         rdfs:label "Әйләнә үзәге"@tt
@@ -5664,7 +5701,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCGbQZVZK371AvCTFs6MLqe>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Heptagon>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Heptagon>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Семиугольник>,
         rdfs:label "Heptagon"@en,
         rdfs:label "Семиугольник"@ru,
@@ -5690,7 +5727,8 @@ Class: <http://ontomathpro.org/ontomathedu#RCHgBHtjkUvhRJZKrc2I7PY>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/circle.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Disk_(mathematics)>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Disk_(mathematics)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Круг>,
         rdfs:label "Disk"@en,
         rdfs:label "Круг"@ru,
@@ -5718,7 +5756,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCIHBUBNUyiCtyhV0mW4RSH>
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/line.html>,
         ome:eduRefRus <https://mathvox.ru/geometria/osnovnie-ponyatiya-i-figuri-geometrii/glava-1-osnovnie-geometricheskie-figuri/tochka-i-pryamaya/>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Line_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Line_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Прямая>,
         rdfs:label "Line"@en,
         rdfs:label "Прямая"@ru,
@@ -5732,7 +5770,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCJ67YLoDKeh7nnSN2hKUyD>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Compass_(drawing_tool)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Compass_(drawing_tool)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Циркуль>,
         rdfs:label "Compass"@en,
         rdfs:label "Циркуль"@ru,
@@ -5864,6 +5902,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCPaAALmnJu7CjuRUgQjXYX>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Theorem on the equality of angles of an isosceles triangle"@en,
         rdfs:label "Теорема о равенстве углов равнобедренного треугольника"@ru,
         rdfs:label "Тигезъянлы өчпочмакның почмаклары тигезлеге турында теорема"@tt
@@ -5880,8 +5919,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCRCkFiOaBxpJSxSpVfcE0Y>
         rdfs:label "Өчпочмак чевианалары кисешүе турындагы теорема"@tt
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R8EG3juvpyWMRMbIyCGDDXr>,
-        <http://ontomathpro.org/ontomathedu#RDtqjz4KEmhtMuagLb0KEyz>
+        <http://ontomathpro.org/ontomathedu#R8EG3juvpyWMRMbIyCGDDXr>
     
     
 Class: <http://ontomathpro.org/ontomathedu#RCRHgOLhKNgrKuQIZ2Srld>
@@ -6008,7 +6046,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCWeOxG9a2L3oZbqD5Zl7aw>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8-p>,
         ome:eduRefRus <https://mathvox.ru/geometria/mnogougolniki/glava-4-parallelogramm-i-ego-svoistva/parallelogramm-varinona-teorema-varinona/>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Varignon%27s_theorem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Varignon%27s_theorem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_Вариньона_(геометрия)>,
         rdfs:label "Varignon's theorem"@en,
         rdfs:label "Вариньон теоремасы"@tt,
@@ -6021,7 +6059,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCWeOxG9a2L3oZbqD5Zl7aw>
 Class: <http://ontomathpro.org/ontomathedu#RCZhaekRPFwy0by1ZI1g61i>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Translation_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Translation_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Параллельный_перенос>,
         rdfs:label "Translation"@en,
         rdfs:label "Параллель күчерү"@tt,
@@ -6081,7 +6119,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCcvYXI0ay3YGHFNGqm7Y68>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Right_triangle#Trigonometric_ratios>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Right_triangle#Trigonometric_ratios>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Тригонометрические_функции>,
         rdfs:label "Trigonometric functions of an acute angle in a right triangle"@en,
         rdfs:label "Trigonometric ratios of an acute angle in a right triangle"@en,
@@ -6217,7 +6255,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCiPxSb430eL41PfyY97bqy>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/right_angle_triangle.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Right_triangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Right_triangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Прямоугольный_треугольник>,
         rdfs:label "Right triangle"@en,
         rdfs:label "Прямоугольный треугольник"@ru,
@@ -6265,7 +6303,7 @@ Class: <http://ontomathpro.org/ontomathedu#RClErTt60ZsYHdBKiW2gA2W>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Convex_polygon>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Convex_polygon>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Выпуклый_многоугольник>,
         rdfs:label "Convex polygon"@en,
         rdfs:label "Выпуклый многоугольник"@ru,
@@ -6278,7 +6316,7 @@ Class: <http://ontomathpro.org/ontomathedu#RClErTt60ZsYHdBKiW2gA2W>
 Class: <http://ontomathpro.org/ontomathedu#RCmXfwy1m59f3cWjn2xT0Tl>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/title> <https://.org/wiki/Semi-major_and_semi-minor_axes>,
+        <http://purl.org/dc/elements/1.1/title> <https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes>,
         rdfs:label "Semiaxis of an ellipse"@en,
         rdfs:label "Полуось эллипса"@ru,
         rdfs:label "Эллипс ярымкүчәрләре"@tt
@@ -6312,7 +6350,9 @@ Class: <http://ontomathpro.org/ontomathedu#RCo1cuSDynsK5N0I16NFkjK>
 Class: <http://ontomathpro.org/ontomathedu#RCpIMYtRye7b8w6whoOH1Mg>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Secant_line>,
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Secant_line>,
         rdfs:label "Secant of a circle"@en,
         rdfs:label "Секущая окружности"@ru,
         rdfs:label "Әйләнәне кисүче туры"@tt
@@ -6398,7 +6438,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCt8uxSXTE1zYGOo7CKGBjr>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8-p>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Ceva%27s_theorem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Ceva%27s_theorem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_Чевы>,
         rdfs:label "Ceva's theorem"@en,
         rdfs:label "Теорема Чевы"@ru,
@@ -6482,7 +6522,7 @@ Class: <http://ontomathpro.org/ontomathedu#RCzVAsI5aYVtP05plOkbjny>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Internal_and_external_angles>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Internal_and_external_angles>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Многоугольник#Связанные_определения>,
         rdfs:label "Interior angle of a polygon"@en,
         rdfs:label "Внутренний угол многоугольника"@ru,
@@ -6529,7 +6569,8 @@ Class: <http://ontomathpro.org/ontomathedu#RD285j36AA3G0HcHA43XmkY>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Diameter>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Diameter>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Диаметр>,
         rdfs:label "Diameter of a circle"@en,
         rdfs:label "Диаметр окружности"@ru,
@@ -6588,7 +6629,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDE5zanRvaa9BRn3cYniCkv>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/triangle.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Triangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Triangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Треугольник>,
         rdfs:label "Triangle"@en,
         rdfs:label "Треугольник"@ru,
@@ -6608,7 +6649,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDE5zanRvaa9BRn3cYniCkv>
 Class: <http://ontomathpro.org/ontomathedu#RDEWjNh3eb2UI5py3dyXB63>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Millimetre>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Millimetre>,
         rdfs:label "Millimetre"@en,
         rdfs:label "Миллиметр"@ru,
         rdfs:label "Миллиметр"@tt
@@ -6678,6 +6719,8 @@ Class: <http://ontomathpro.org/ontomathedu#RDHO9gLBVoBJp0ppkUMqSsI>
 Class: <http://ontomathpro.org/ontomathedu#RDHZD4CE2n3xkKKylD6klhM>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9-p>,
+        ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/glava-16/teorema-o-raspolojenii-ortocentra-tochki-peresecheniya-median-i-centra-opisannoi-okrujnosti-v-treugolnike/>,
         rdfs:label "Euler line in a triangle"@en,
         rdfs:label "Прямая Эйлера в треугольнике"@ru,
         rdfs:label "Өчпочмакта Эйлер турысы"@tt
@@ -6690,6 +6733,8 @@ Class: <http://ontomathpro.org/ontomathedu#RDHZD4CE2n3xkKKylD6klhM>
 Class: <http://ontomathpro.org/ontomathedu#RDIBeX1RHwZa7w3i88STNz8>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/vpisannaia-i-opisannaia-okruzhnosti-9244/re-44ec2b8e-dc52-456f-a0dc-69a012de326f>,
         rdfs:label "Mutual arrangement of a circumscribed triangle and an inscribed circle"@en,
         rdfs:label "Взаимное расположение описанного треугольника и вписанной окружности треугольника"@ru,
         rdfs:label "Камаучы өчпочмак һәм өчпочмакка камалган әйләнәнең үзара торышы"@tt
@@ -6752,6 +6797,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDJOKxTbVS3JR5ppAUl2l1K>
 Class: <http://ontomathpro.org/ontomathedu#RDJkRygfTp6D7THHDtir523>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9-p>,
         rdfs:label "Mutual arrangement of a triangle and a circle of nine points of a triangle"@en,
         rdfs:label "Взаимное расположение треугольника и окружности девяти точек треугольника"@ru,
         rdfs:label "Өчпочмак һәм өчпочмакның тугыз ноктасы әйләнәсенең узара торышы"@tt
@@ -6859,7 +6905,8 @@ Class: <http://ontomathpro.org/ontomathedu#RDPlwRwjkk3ID9Crq3IVbr9>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9-p>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Nine-point_circle>,
+        ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/treugolniki-glava-9/opisannaya-okolo-ortotreugolnika-okrujnost/>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Nine-point_circle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Окружность_девяти_точек>,
         rdfs:label "Nine-point circle of a triangle"@en,
         rdfs:label "Окружность Эйлера"@ru,
@@ -6899,7 +6946,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDSsl2enSHxANJDqex08eNT>
 Class: <http://ontomathpro.org/ontomathedu#RDTF3F38RrqqsCUy0ItyFQ5>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Radical_axis>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Radical_axis>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Радикальная_ось_двух_окружностей>,
         rdfs:label "Radical axis"@en,
         rdfs:label "Радикальная ось окружностей"@ru,
@@ -6955,7 +7002,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDXM0exNgtnehJSVHKgEWAR>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/hexagon.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Hexagon>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Hexagon>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Шестиугольник>,
         rdfs:label "Hexagon"@en,
         rdfs:label "Алтыпочмак"@tt,
@@ -7017,7 +7064,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDYx3mo8W8t8x1JqpvwRXQi>
 Class: <http://ontomathpro.org/ontomathedu#RDZ9uj0wOP02kvbjCbsOu57>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/T-square>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/T-square>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Рейсшина>,
         rdfs:label "T-square"@en,
         rdfs:label "Рейсшина"@ru,
@@ -7137,7 +7184,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDdLg6nqMtJBJ1oNUYAMpY>
 Class: <http://ontomathpro.org/ontomathedu#RDeZTnXKfLt1VnYlmxIODEn>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Triangle_center>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Triangle_center>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Замечательные_точки_треугольника>,
         rdfs:label "Remarkable point of a triangle"@en,
         rdfs:label "Triangle center"@en,
@@ -7165,7 +7212,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDecUFdw08blitT6suiz4n2>
 Class: <http://ontomathpro.org/ontomathedu#RDfHIDs4mXarZxaKcZOP2Ck>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Radian>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Radian>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Радиан>,
         rdfs:label "Radian"@en,
         rdfs:label "Радиан"@ru,
@@ -7189,7 +7236,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDfipRSaXxZ9y6qbPqe5VYE>
 Class: <http://ontomathpro.org/ontomathedu#RDgDq158H47Spk9gw0zv4J8>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Ellipse>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Ellipse>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Эллипс>,
         rdfs:label "Ellipse"@en,
         rdfs:label "Эллипс"@ru,
@@ -7273,11 +7320,12 @@ Class: <http://ontomathpro.org/ontomathedu#RDjPUAs7O1CGVFyWT4MgE6Y>
 Class: <http://ontomathpro.org/ontomathedu#RDja8KNHobxtiisi0uo3tNl>
 
     Annotations: 
-        rdfs:label "Intersecting point of diagonals of a quadrilateral"@en,
+        rdfs:label "Intersecting point of diagonals in a quadrilateral"@en,
         rdfs:label "Дүртпочмак диагональләре кисешкән нокта"@tt,
         rdfs:label "Точка пересечения диагоналей четырехугольника"@ru
     
     SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo,
         <http://ontomathpro.org/ontomathedu#RBA3nicOsWGVcUPO9rzCV9y>,
         ome:ontologicallyDependsOn some <http://ontomathpro.org/ontomathedu#R5MbrSEH1tuI1g6DSUfifA>
     
@@ -7318,7 +7366,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDlQvcDlyfEwWFRMipFmTrm>
 Class: <http://ontomathpro.org/ontomathedu#RDlWTh2jauRhhG5Q1BJMtbL>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Point_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Point_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Точка_(геометрия)>,
         rdfs:comment "Экземпляр класса \"Неопределяемые понятия аксиоматики Гильберта\""^^xsd:string,
         rdfs:label "Point"@en,
@@ -7344,7 +7392,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDm4dWBKL2vfuSybf0AOxlo>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Cathetus>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Cathetus>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Катет>,
         rdfs:label "Cathetus"@en,
         rdfs:label "Leg of a right triangle"@en,
@@ -7427,7 +7475,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDpJKwhOlAipJp7nkcDJWjQ>
 Class: <http://ontomathpro.org/ontomathedu#RDpLh0mMAtZ3PNi5gdHvRqQ>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Homothetic_transformation>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Homothetic_transformation>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Центр_подобия>,
         rdfs:label "Homothetic center"@en,
         rdfs:label "Гомотетия үзәге"@tt,
@@ -7467,11 +7515,12 @@ Class: <http://ontomathpro.org/ontomathedu#RDpoVpds6njSqbhwjhjAUNo>
         ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/treugolniki-glava-9/visota-treugolnika-osnovanie-visoti-ortocentr-treugolnika/>,
         ome:hasPrerequisite "Высота треугольника"^^xsd:string,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Ортоцентр>,
-        rdfs:label "Intersection point of a triangle altitudes"@en,
+        rdfs:label "Intersection point of triangle altitudes"@en,
         rdfs:label "Точка пересечения высот треугольника"@ru,
         rdfs:label "Өчпочмак биеклекләре кисешкән нокта"@tt
     
     SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo,
         <http://ontomathpro.org/ontomathedu#RDeZTnXKfLt1VnYlmxIODEn>
     
     
@@ -7527,7 +7576,8 @@ Class: <http://ontomathpro.org/ontomathedu#RDuFqn1GJlQaZGwUVjlMpIp>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Chord_(geometry)>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Chord_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Хорда_(геометрия)>,
         rdfs:label "Chord of a circle"@en,
         rdfs:label "Хорда окружности"@ru,
@@ -7577,7 +7627,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDv25ipiTlBE1U108mKAvEj>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/polygons.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Polygon>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Polygon>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Многоугольник>,
         rdfs:label "Polygon"@en,
         rdfs:label "Күппочмак"@tt,
@@ -7636,7 +7686,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDwlxgYNjTqD7XJxM0KGbii>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:hasPrerequisite "Трапеция"^^xsd:string,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Trapezoid#Special_cases>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Trapezoid#Special_cases>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Трапеция#Виды_трапеций>,
         rdfs:label "Rectangular trapezoid"@en,
         rdfs:label "Прямоугольная трапеция"@ru,
@@ -7650,7 +7700,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDx8XXEGRjsZPcA7uDIpDOD>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Inscribed_angle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Inscribed_angle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Вписанный_угол>,
         rdfs:label "Inscribed angle"@en,
         rdfs:label "Вписанный угол окружности"@ru,
@@ -7740,6 +7790,8 @@ Class: <http://ontomathpro.org/ontomathedu#RDxzaI14bWxNy2ucZDBTWUS>
 Class: <http://ontomathpro.org/ontomathedu#RDy3jEWvGMeFm9kY4f26y4t>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
         rdfs:label "Problem of triangle construction with given sides and angles using a compass and a ruler"@en,
         rdfs:label "Задача о построении циркулем и линейкой треугольника по сторонам или углам"@ru,
         rdfs:label "Өчпочмакны яклар яки почмаклар буенча циркуль һәм линейка белән төзү турында мәсьәлә"@tt
@@ -7753,7 +7805,7 @@ Class: <http://ontomathpro.org/ontomathedu#RDyij4EpD92zorcDbN3qree>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.webmath.ru/poleznoe/formules_17_5.php>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Angle#Individual_angles>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Angle#Individual_angles>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Угол#Типы_углов>,
         rdfs:label "Acute angle"@en,
         rdfs:label "Кысынкы почмак"@tt,
@@ -7838,7 +7890,8 @@ Class: <http://ontomathpro.org/ontomathedu#RFViDnqPvPA6GMOfHQMqtF>
 
     Annotations: 
         rdfs:label "Commutative axiom for an addition of three vectors"@en,
-        rdfs:label "Аксиома коммутативности сложения векторов"@ru
+        rdfs:label "Аксиома коммутативности сложения векторов"@ru,
+        rdfs:label "Векторларны кушуынын коммутативлык аксиомасы"@tt
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RCfIWGc2O1hDnct8A9d9yKo>
@@ -7916,7 +7969,7 @@ Class: <http://ontomathpro.org/ontomathedu#RH1Xmdex9BiAxupHcTnUSz>
 Class: <http://ontomathpro.org/ontomathedu#RH6XvWREX7CZZFtPbEu5dK>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Law_of_cosines>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Law_of_cosines>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Теорема_косинусов>,
         rdfs:label "Cosine rule"@en,
         rdfs:label "Косинуслар теоремасы"@tt,
@@ -8023,7 +8076,7 @@ Class: <http://ontomathpro.org/ontomathedu#RJMja5933eOAnCJBo6U4QC>
 Class: <http://ontomathpro.org/ontomathedu#RJgQGX7Ww9amjTNQnF2CIT>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Semiperimeter>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Semiperimeter>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Полупериметр>,
         rdfs:label "Half-perimeter of a polygon"@en,
         rdfs:label "Semiperimeter of a polygon"@en,
@@ -8061,7 +8114,7 @@ Class: <http://ontomathpro.org/ontomathedu#RLfTx5EJyjoizZm1ABPOwY>
 
     Annotations: 
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/nachalnye-geometricheskie-svedeniia-14930/sravnenie-otrezkov-i-uglov-12147/re-dbeceeb6-0f52-403c-b561-71bbaa8eafc5>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Congruence_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Congruence_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Конгруэнтность_(геометрия)>,
         rdfs:label "Congruent figures"@en,
         rdfs:label "Равные геометрические фигуры"@ru,
@@ -8086,7 +8139,7 @@ Class: <http://ontomathpro.org/ontomathedu#RLomtVyudGUjbXKqgC9g9H>
 Class: <http://ontomathpro.org/ontomathedu#RLr0Z7oucn35jfmNN5hffw>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Power_of_a_point>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Power_of_a_point>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Степень_точки_относительно_окружности>,
         rdfs:label "Degree of a point related to a circle"@en,
         rdfs:label "Power of a point related to a circle"@en,
@@ -8102,7 +8155,7 @@ Class: <http://ontomathpro.org/ontomathedu#RMctNenLYpccpQt0jjMju>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
         ome:hasPrerequisite "Четырехугольник"^^xsd:string,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Trapezoid>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Trapezoid>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Трапеция>,
         rdfs:label "Trapezoid"@en,
         rdfs:label "Трапеция"@ru,
@@ -8196,7 +8249,7 @@ Class: <http://ontomathpro.org/ontomathedu#RPA2lfgXpjMxZlcJ7VyBye>
 Class: <http://ontomathpro.org/ontomathedu#RPB6tUkQtj9vazUQ11OTAQ>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Centimetre>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Centimetre>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Сантиметр>,
         rdfs:label "Centimetre"@en,
         rdfs:label "Сантиметр"@ru,
@@ -8232,8 +8285,10 @@ Class: <http://ontomathpro.org/ontomathedu#RPyKs8gGZtVfSNrIm5Iai7>
 Class: <http://ontomathpro.org/ontomathedu#RQ7LKQ7HoanUKcnirYtQjJ>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/circle.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Circle>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Circle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Окружность>,
         rdfs:label "Circle"@en,
         rdfs:label "Окружность"@ru,
@@ -8246,7 +8301,7 @@ Class: <http://ontomathpro.org/ontomathedu#RQ7LKQ7HoanUKcnirYtQjJ>
 Class: <http://ontomathpro.org/ontomathedu#RQAkUqYKZwnavZaRCG0oPG>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Length>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Length>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Длина#Единицы_измерения_длины>,
         rdfs:label "Measurement unit of length"@en,
         rdfs:label "Единица измерения длины"@ru,
@@ -8259,7 +8314,7 @@ Class: <http://ontomathpro.org/ontomathedu#RQAkUqYKZwnavZaRCG0oPG>
 Class: <http://ontomathpro.org/ontomathedu#RQPsNBJv63YHUlgY4DVZpD>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Square_metre>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Square_metre>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Квадратный_метр>,
         rdfs:label "Square metre"@en,
         rdfs:label "Квадрат метр"@tt,
@@ -8329,7 +8384,7 @@ Class: <http://ontomathpro.org/ontomathedu#RSHenIaOEnFjdnBxsEGwYH>
 Class: <http://ontomathpro.org/ontomathedu#RSKC561QBN7AwW5Z10raBR>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Ptolemy%27s_theorem>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Ptolemy%27s_theorem>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Неравенство_Птолемея>,
         rdfs:label "Ptolemy's theorem"@en,
         rdfs:label "Птолемей теоремасы"@tt,
@@ -8424,6 +8479,7 @@ Class: <http://ontomathpro.org/ontomathedu#RTYrJ503AyPledgioh315a>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
         rdfs:label "Theorem of the median of an isosceles triangle drawn to the base"@en,
         rdfs:label "Теорема о медиане равнобедренного треугольника, проведенной к основанию"@ru,
         rdfs:label "Тигезъянлы өчпочмакның нигезенә үткәрелгән медиана турында теорема"@tt
@@ -8504,7 +8560,8 @@ Class: <http://ontomathpro.org/ontomathedu#RW8gFXLTqFkGIyQB1uVTUj>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Radius>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Radius>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Радиус>,
         rdfs:label "Radius of a circle"@en,
         rdfs:label "Радиус  окружности"@ru,
@@ -8531,7 +8588,7 @@ Class: <http://ontomathpro.org/ontomathedu#RWShZ5ziMXNfSVLREW7tzc>
 Class: <http://ontomathpro.org/ontomathedu#RWnypiCv2TFmqCFn3k4j4U>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Identity_function>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Identity_function>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Тождественное_отображение>,
         rdfs:label "Identity map"@en,
         rdfs:label "Тождественное отображение"@ru,
@@ -8545,7 +8602,7 @@ Class: <http://ontomathpro.org/ontomathedu#RWu27qG5kOi5aJ4UWav13q>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Bisection#Angle_bisector>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Bisection#Angle_bisector>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Биссектриса>,
         rdfs:label "Angle bisector"@en,
         rdfs:label "Биссектриса угла"@ru,
@@ -8606,7 +8663,7 @@ Class: <http://ontomathpro.org/ontomathedu#RZClperGc48fiSc88mC3d5>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Triangle_inequality>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Triangle_inequality>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Неравенство_треугольника>,
         rdfs:label "Triangle inequality"@en,
         rdfs:label "Неравенство треугольника"@ru,
@@ -8630,25 +8687,29 @@ Class: <http://ontomathpro.org/ontomathedu#RZv75qkIzqJRGH2uMXzGkf>
 Class: <http://ontomathpro.org/ontomathedu#Ra0GaNkvDUV7PX5yOkzYll>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Concentric_objects>,
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-8-vzaimnoe-raspolojenie-okrujnostei/взаимное-расположение-двух-окружнос/>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Concentric_objects>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Окружность#Концентрические_и_ортогональные_окружности>,
         rdfs:label "Concentric circles"@en,
         rdfs:label "Концентрические окружности"@ru,
         rdfs:label "Үзәктәш әйләнәләр"@tt
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R7xOCXOmQMtwSDkKV5U6cSP>
+        ome:R94sCsH4Qq9TPEkfN3owAKG
     
     
 Class: <http://ontomathpro.org/ontomathedu#RaOOHfUgLNNSyZwSj5r7OE>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
         rdfs:label "Orthogonal vectors"@en,
         rdfs:label "Ортогональ векторлар"@tt,
         rdfs:label "Ортогональные векторы"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>
+        <http://ontomathpro.org/ontomathedu#RsyYNrSaeZ2xSoPQZHb4z5>,
+        ome:hasArgument exactly 2 <http://ontomathpro.org/ontomathedu#R9FRdi631i64TmzJvcyRfMH>
     
     
 Class: <http://ontomathpro.org/ontomathedu#Racu2GXUiyVAYKx34XW1CC>
@@ -8670,7 +8731,7 @@ Class: <http://ontomathpro.org/ontomathedu#Rad25RbxI7TgxH84Gjgsm>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Internal_and_external_angles>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Internal_and_external_angles>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Многоугольник#Связанные_определения>,
         rdfs:label "Exterior angle of a polygon"@en,
         rdfs:label "Внешний угол  многоугольника"@ru,
@@ -8797,7 +8858,7 @@ Class: <http://ontomathpro.org/ontomathedu#RgZbWSA8kKOM2vLz9VFDdU>
 Class: <http://ontomathpro.org/ontomathedu#Rgei2iwmIaScM8FRov1A5E>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Regular_polygon>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Regular_polygon>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Правильный_многоугольник>,
         rdfs:label "Regular polygon"@en,
         rdfs:label "Правильный многоугольник"@ru,
@@ -8834,7 +8895,7 @@ Class: <http://ontomathpro.org/ontomathedu#RjwIFf0yNitpKExv9CJL6r>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-d>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Hilbert%27s_axioms>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Hilbert%27s_axioms>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Аксиоматика_Гильберта>,
         rdfs:label "Hilbert's axiomatics"@en,
         rdfs:label "Аксиоматика Гильберта"@ru,
@@ -8869,6 +8930,8 @@ Class: <http://ontomathpro.org/ontomathedu#RkUQMjtpE0qD3PzSB0KBzK>
 Class: <http://ontomathpro.org/ontomathedu#RknMh83tVZ76Vta1Sl4vR0>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-8-vzaimnoe-raspolojenie-okrujnostei/kasanie-okrujnostei/>,
         rdfs:label "Externally tangent circles"@en,
         rdfs:label "Internal touching of circles"@en,
         rdfs:label "Окружности касаются внутренним образом"@ru,
@@ -9033,7 +9096,7 @@ Class: <http://ontomathpro.org/ontomathedu#RnTDdD77ZUjZjMlR3JGm1D>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Ruler>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Ruler>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Линейка>,
         rdfs:label "Straightedge with divisions"@en,
         rdfs:label "Линейка с делениями"@ru,
@@ -9181,7 +9244,7 @@ Class: <http://ontomathpro.org/ontomathedu#RpS0MPy2krkj9ijNyzbeHV>
 Class: <http://ontomathpro.org/ontomathedu#Rph89baBaCDfQbTJUIm2sd>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Incircle_and_excircles_of_a_triangle#Incircle_and_incenter>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Incircle_and_excircles_of_a_triangle#Incircle_and_incenter>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Вписанная_и_вневписанные_в_треугольник_окружности#Вписанная_окружность>,
         rdfs:label "Incircle of a triangle"@en,
         rdfs:label "Inscribed circle of a triangle"@en,
@@ -9197,7 +9260,7 @@ Class: <http://ontomathpro.org/ontomathedu#Rph89baBaCDfQbTJUIm2sd>
 Class: <http://ontomathpro.org/ontomathedu#Rpp5KHqFtyh6U7vLYe1QHs>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Reuleaux_triangle>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Reuleaux_triangle>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Треугольник_Рёло>,
         rdfs:label "Reuleaux triangle"@en,
         rdfs:label "Рело өчпочмагы"@tt,
@@ -9281,7 +9344,7 @@ Class: <http://ontomathpro.org/ontomathedu#RqqTyktTd2ApBVng6N45hZ>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Midpoint>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Midpoint>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Середина_отрезка>,
         rdfs:label "Bisecting point of a segment"@en,
         rdfs:label "Midpoint of a sector"@en,
@@ -9310,7 +9373,8 @@ Class: <http://ontomathpro.org/ontomathedu#Rr9DIilOBv6Ve764UyzqKv>
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Centre_(geometry)#Circles,_spheres,_and_segments>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Centre_(geometry)#Circles,_spheres,_and_segments>,
         rdfs:label "Center of a circle"@en,
         rdfs:label "Түгәрәк үзәге"@tt,
         rdfs:label "Центр круга"@ru
@@ -9324,7 +9388,7 @@ Class: <http://ontomathpro.org/ontomathedu#RrOsm267OndAE3BbLjjvC3>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/plane.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Plane_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Plane_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Плоскость>,
         rdfs:label "Plane"@en,
         rdfs:label "Плоскость"@ru,
@@ -9351,7 +9415,7 @@ Class: <http://ontomathpro.org/ontomathedu#Rs2A4v0rAErtSQ0t1YMgPR>
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/treugolniki-glava-10/mediana-treugolnika/>,
         ome:hasPrerequisite <http://ontomathpro.org/ontomathedu#RDE5zanRvaa9BRn3cYniCkv>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Median_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Median_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Медиана_треугольника>,
         rdfs:label "Median of a triangle"@en,
         rdfs:label "Медиана треугольника"@ru,
@@ -9398,12 +9462,16 @@ Class: <http://ontomathpro.org/ontomathedu#RsEQey6CDc5FeVVzb9ntoX>
 Class: <http://ontomathpro.org/ontomathedu#RsyYNrSaeZ2xSoPQZHb4z5>
 
     Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-e9839d77-0fea-4474-ac42-9666b615c337>,
+        ome:hasPrerequisite "Вектор"^^xsd:string,
         rdfs:label "Noncollinear vectors"@en,
         rdfs:label "Коллинеар булмаган векторлар"@tt,
         rdfs:label "Неколлинеарные векторы"@ru
     
     SubClassOf: 
-        <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>
+        <http://ontomathpro.org/ontomathedu#R9gfNrqva6uJm8dfTn1uMaS>,
+        ome:hasArgument min 2 <http://ontomathpro.org/ontomathedu#R9FRdi631i64TmzJvcyRfMH>
     
     
 Class: <http://ontomathpro.org/ontomathedu#Ru1iOkY3XZPTQPks9BpvAc>
@@ -9453,7 +9521,7 @@ Class: <http://ontomathpro.org/ontomathedu#RuYkbqxE5NuOyip5jVsfxq>
 Class: <http://ontomathpro.org/ontomathedu#RuZSd2HOABhPKxAV91HL86>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Polygon#Area>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Polygon#Area>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Многоугольник#Площадь>,
         rdfs:label "Area of a polygon"@en,
         rdfs:label "Күппочмак мәйданы"@tt,
@@ -9478,7 +9546,7 @@ Class: <http://ontomathpro.org/ontomathedu#RutyhFp5gArqX689ytupv3>
 Class: <http://ontomathpro.org/ontomathedu#RvAZM1LoovPjUxYGZ0pWvs>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Similarity_(geometry)>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Similarity_(geometry)>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Подобие>,
         rdfs:label "Similar figures"@en,
         rdfs:label "Охшаш фигуралар"@tt,
@@ -9641,14 +9709,14 @@ Class: <http://ontomathpro.org/ontomathedu#RzafxCRQ66Fx3Sa2fHkIUp>
 Class: <http://ontomathpro.org/ontomathedu#RzqB3pViaHDiOvbH2HegQq>
 
     Annotations: 
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Unit_of_measurement>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Unit_of_measurement>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Единицы_физических_величин>,
         rdfs:label "Unit of measurement"@en,
         rdfs:label "Единица измерения"@ru,
         rdfs:label "Үлчәү берәмлеге"@tt
     
     SubClassOf: 
-        owl:Thing
+        ome:RBJ17uigIxIF6XkATvY18Rn
     
     
 Class: <http://ontomathpro.org/ontomathedu#Rzr7SACTSKWUEbp5G1E2Bz>
@@ -9656,7 +9724,7 @@ Class: <http://ontomathpro.org/ontomathedu#Rzr7SACTSKWUEbp5G1E2Bz>
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9-p>,
         ome:eduRefEn <https://www.mathsisfun.com/geometry/hyperbola.html>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Hyperbola>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Hyperbola>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Гипербола_(математика)>,
         rdfs:label "Hyperbola"@en,
         rdfs:label "Гипербола"@ru,
@@ -9673,6 +9741,7 @@ Class: ome:R6zo88nUJnZtKsDpr48O7Y
         ome:eduRefEn <https://www.mathsisfun.com/angles.html>,
         ome:eduRefRus <https://www.webmath.ru/poleznoe/formules_17_5.php>,
         rdfs:label "Nonconvex angle"@en,
+        rdfs:label "Кабарынкы булмаган почмак"@tt,
         rdfs:label "Невыпуклый угол"@ru
     
     SubClassOf: 
@@ -9691,6 +9760,18 @@ Class: ome:R75RubmW8cgruwP7wwck52x
         <http://ontomathpro.org/ontomathedu#RDtqjz4KEmhtMuagLb0KEyz>
     
     
+Class: ome:R76sRHiXAByZIz2qqli3q5E
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-e9839d77-0fea-4474-ac42-9666b615c337>,
+        rdfs:label "Капма-каршы векторлар"@tt,
+        rdfs:label "Противоположные векторы"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R9wvvfgMtBOmZvtokNHrgVz>
+    
+    
 Class: ome:R77IVn4qlOFG7P6w2I6dnOa
 
     Annotations: 
@@ -9700,15 +9781,64 @@ Class: ome:R77IVn4qlOFG7P6w2I6dnOa
         <http://ontomathpro.org/ontomathedu#RDFNGvlzYA4haWAX6iEC5AL>
     
     
+Class: ome:R78IrFXZ5TmJoLwb7QyWc0n
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
+        rdfs:label "Distance from the center of a circle to a line"@en,
+        rdfs:label "Расстояние от центра окружности до прямой"@ru,
+        rdfs:label "Әйләнә үзәгеннән турыга кадәр ераклык"@tt
+    
+    SubClassOf: 
+        ome:R7UIO1eZsRZAI3qkDxUGFQa
+    
+    
+Class: ome:R7UIO1eZsRZAI3qkDxUGFQa
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
+        rdfs:label "Distance from a poin to a line"@en,
+        rdfs:label "Ноктадан турыга кадәр ераклык"@tt,
+        rdfs:label "Расстояние от точки до прямой"@ru
+    
+    SubClassOf: 
+        ome:R8WR60wsNklHjl4NGzXRR8s
+    
+    
 Class: ome:R7WFrHeC9eQLhbq7X9PYU4M
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/nachalnye-geometricheskie-svedeniia-14930/izmerenie-otrezkov-i-uglov-9704/re-8118f3d0-7a8f-4f3a-91cc-9e12cff98c74>,
-        rdfs:label "Длина суммы отрезков равна сумме их длин"@ru
+        rdfs:label "Длина суммы отрезков равна сумме их длин"@ru,
+        rdfs:label "Кисемтәләрнең суммасы озынлыгы аларның озынлыгы суммасына тигез"@tt
     
     SubClassOf: 
         ome:RCXOIABX1NLJbfTgzAEKe2y
+    
+    
+Class: ome:R7XGc5j86IXnIZ02pgm1kE7
+
+    Annotations: 
+        rdfs:label "Точка пересечения двух биссектрис внешних и внутренней биссектрисы угла"@ru
+    
+    SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo,
+        <http://ontomathpro.org/ontomathedu#RBsYARpkCcH9JzSd8BqIbHQ>
+    
+    
+Class: ome:R7j4UlYslWXtxcu8kE9m7KT
+
+    Annotations: 
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
+        rdfs:label "Perpendicular"@en,
+        rdfs:label "Перпендикуляр"@ru,
+        rdfs:label "Перпендикуляр"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R8bXnaTM9tBSSyVXZRtJJeG>
     
     
 Class: ome:R7ll2JnPqBc4UyTUI33KtJ
@@ -9722,6 +9852,30 @@ Class: ome:R7ll2JnPqBc4UyTUI33KtJ
         <http://ontomathpro.org/ontomathedu#RqvmasCkZXZW48rYaxAArK>
     
     
+Class: ome:R7q9NUoaPs087TCx8h2WLiS
+
+    Annotations: 
+        rdfs:label "Intersection point of internal bisectors of triangle"@en,
+        rdfs:label "Точка пересечения внутренних биссектрис треугольника"@ru,
+        rdfs:label "Өчпочмакның эчке биссектрисалары кисешкән нокта"@tt
+    
+    SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo,
+        <http://ontomathpro.org/ontomathedu#RBsYARpkCcH9JzSd8BqIbHQ>
+    
+    
+Class: ome:R7s9V59jAwkiIXnOjjTJDNW
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-9>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/9-klass/vektory-9232/poniatie-vektora-9233/re-e9839d77-0fea-4474-ac42-9666b615c337>,
+        rdfs:label "Равные векторы"@ru,
+        rdfs:label "Тигез векторлар"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R9Hqgf5QS70UKNgdaAzN8UI>
+    
+    
 Class: ome:R83DQtM7g70wAtc5l3VUQtU
 
     Annotations: 
@@ -9730,6 +9884,79 @@ Class: ome:R83DQtM7g70wAtc5l3VUQtU
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#R8A8z8cM57DEetXDXSP2xSF>
+    
+    
+Class: ome:R85JSQLZz6uc0XxuBd3ySpl
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
+        rdfs:label "Line and circle do not intersect"@en,
+        rdfs:label "Прямая и окружность не пересекаются"@ru,
+        rdfs:label "Туры һәм әйләнә кисешми"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R7fdDc24m5aFpM4V8kwqiNo>
+    
+    
+Class: ome:R8JDbNLSalxsihn2qaqreKN
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        rdfs:label "Line intersection point"@en,
+        rdfs:label "Точка пересечения прямых"@ru,
+        rdfs:label "Турылар кисешкән нокта"@tt
+    
+    SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo
+    
+    
+Class: ome:R8QMGxfRuYX54yZ3mMf1dO5
+
+    Annotations: 
+        rdfs:label "Distance between points"@en,
+        rdfs:label "Нокталар арасындагы ераклык"@tt,
+        rdfs:label "Расстояние между точками"@ru
+    
+    SubClassOf: 
+        ome:R8WR60wsNklHjl4NGzXRR8s
+    
+    
+Class: ome:R8WR60wsNklHjl4NGzXRR8s
+
+    Annotations: 
+        rdfs:label "Distance between geometric figures"@en,
+        rdfs:label "Геометрик фигуралар арасындагы ераклык"@tt,
+        rdfs:label "Расстояние между геометрическими фигурами"@ru
+    
+    SubClassOf: 
+        ome:R9RSQEnKE4bIaKGXnAFvaQb
+    
+    
+Class: ome:R8Y0iFfjFtIgDvHoXG9mHKN
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        rdfs:label "End of diameter"@en,
+        rdfs:label "Диаметр очы"@tt,
+        rdfs:label "Конец диаметра"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#RCzUCLrvHJPhhhsWvrVsD6G>
+    
+    
+Class: ome:R8cHJfEDjvA9qhbDreCS6MU
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
+        rdfs:label "Intersection point of a line and a circle"@en,
+        rdfs:label "Точка пересечения прямой и окружности"@ru,
+        rdfs:label "Туры һәм әйләнә кисешкән нокта"@tt
+    
+    SubClassOf: 
+        ome:RDuHAmhs9vGDaZBLfW4FjlU
     
     
 Class: ome:R8dZ3Ee544SkhL2hH2dynfX
@@ -9774,6 +10001,17 @@ Class: ome:R90twvPq1rBsAw2bievbdZs
         <http://ontomathpro.org/ontomathedu#RDFNGvlzYA4haWAX6iEC5AL>
     
     
+Class: ome:R94sCsH4Qq9TPEkfN3owAKG
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-8-vzaimnoe-raspolojenie-okrujnostei/взаимное-расположение-двух-окружнос/>,
+        rdfs:label "Непересекающиеся окружности"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R7xOCXOmQMtwSDkKV5U6cSP>
+    
+    
 Class: ome:R9Cfb6CJTdiyBea1uTQyHfo
 
     Annotations: 
@@ -9800,6 +10038,7 @@ Class: ome:R9IEEHjGpiE95naY7Rfeg0r
 
     Annotations: 
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/parallelnye-priamye-9124/priznaki-parallelnosti-dvukh-priamykh-aksioma-parallelnykh-priamykh-9228/re-4ba7ee5b-3478-495b-b7eb-3e4eeb2d9b4c>,
+        rdfs:label "Билге"@tt,
         rdfs:label "Признак"@ru
     
     SubClassOf: 
@@ -9828,6 +10067,7 @@ Class: ome:R9abnMS7vzAveQQmy25LHeU
 Class: ome:R9hUrLZSgt21lDxaTDI2fGT
 
     Annotations: 
+        rdfs:comment "This is a temporary hierarchy, that is to be dissolved"@en,
         rdfs:label "Metaclass"@en,
         rdfs:label "Метакласс"@ru,
         rdfs:label "Метакласс"@tt
@@ -9840,7 +10080,8 @@ Class: ome:R9iisXiJCGJuPFblJ7jxnL0
         ome:eduRefEn <https://www.mathsisfun.com/angles.html>,
         ome:eduRefRus <https://www.webmath.ru/poleznoe/formules_17_5.php>,
         rdfs:label "Round angle"@en,
-        rdfs:label "Полный угол"@ru
+        rdfs:label "Полный угол"@ru,
+        rdfs:label "Тулы почмак"@tt
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#R9lMyAYbMeEYN0OdD7cbwZ6>
@@ -9855,6 +10096,17 @@ Class: ome:R9xQhhLZj1Ko1NyJ7b0fLk
         <http://ontomathpro.org/ontomathedu#R9bdjxob3ryHSP4v6NpgXZF>
     
     
+Class: ome:RB0FaOEtqZCKJOsSqTAqnzn
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://mathvox.ru/geometria/okrujnosti-i-ih-svoistva/glava-8-vzaimnoe-raspolojenie-okrujnostei/взаимное-расположение-двух-окружнос/>,
+        rdfs:label "Пересекающиеся окружности"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R7xOCXOmQMtwSDkKV5U6cSP>
+    
+    
 Class: ome:RB5Ew9YZHmFppctOrsWNTSo
 
     Annotations: 
@@ -9866,6 +10118,17 @@ Class: ome:RB5Ew9YZHmFppctOrsWNTSo
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#RBiuIXC3pgY0Sjjqa6IO2U5>
+    
+    
+Class: ome:RBEQwbOtvvaaLwzwXUzSLbe
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/mediany-bissektrisy-i-vysoty-treugolnika-9481/re-56c524c8-9727-48db-9926-95988d203d40>,
+        rdfs:label "Основание перпендикуляра"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#RCzUCLrvHJPhhhsWvrVsD6G>
     
     
 Class: ome:RBJ17uigIxIF6XkATvY18Rn
@@ -9892,7 +10155,8 @@ Class: ome:RBYGETfpLo8m1a5AkR1kmW3
 
     Annotations: 
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/parallelnye-priamye-9124/priznaki-parallelnosti-dvukh-priamykh-aksioma-parallelnykh-priamykh-9228/re-4ba7ee5b-3478-495b-b7eb-3e4eeb2d9b4c>,
-        rdfs:label "Свойство"@ru
+        rdfs:label "Свойство"@ru,
+        rdfs:label "Үзлек"@tt
     
     SubClassOf: 
         ome:RCLaa81b5Uek0jeFjlJEUHE
@@ -9902,6 +10166,7 @@ Class: ome:RCAPWmAojfVyZhn0wuT3LRV
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Радиус>,
         rdfs:label "Radius of a circle"@en,
         rdfs:label "Tүгәрәк радиусы"@tt,
@@ -9911,13 +10176,41 @@ Class: ome:RCAPWmAojfVyZhn0wuT3LRV
         <http://ontomathpro.org/ontomathedu#RBvNWOj2ewV9gKcipBmpvSB>
     
     
+Class: ome:RCBl9oW7ti3K7WYnz34yQ43
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        rdfs:label "Mutual arrangement of a point and a circle"@en,
+        rdfs:label "Взаимное расположение точки и прямой"@ru,
+        rdfs:label "Нокта һәм турының үзара торышы"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R95dOnasTRjObW4dpVmeTEV>
+    
+    DisjointUnionOf: 
+        ome:RDiwSOsh3r3oxW2CM9V9ZQe, ome:RE5N4dEI4lukuIKOV3268j
+    
+    
+Class: ome:RCC4KnxUL2p4eMSmhIQKLCT
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/vpisannaia-i-opisannaia-okruzhnosti-9244/re-44ec2b8e-dc52-456f-a0dc-69a012de326f>,
+        rdfs:label "Теорема о центре описанной окружности треугольника"@ru,
+        rdfs:label "Өчпочмакның камаучы әйләнә үзәге турында теорема"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R8EG3juvpyWMRMbIyCGDDXr>
+    
+    
 Class: ome:RCDCxd506epRRjboB2uPzKq
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-d>,
         ome:eduRefRus <https://www.webmath.ru/poleznoe/formules_17_5.php>,
         rdfs:label "Convex angle"@en,
-        rdfs:label "Выпуклый угол"@ru
+        rdfs:label "Выпуклый угол"@ru,
+        rdfs:label "Кабарынкы  почмак"@tt
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#R9lMyAYbMeEYN0OdD7cbwZ6>
@@ -9972,6 +10265,19 @@ Class: ome:RCXOIABX1NLJbfTgzAEKe2y
         ome:ontologicallyDependsOn some <http://ontomathpro.org/ontomathedu#R8bXnaTM9tBSSyVXZRtJJeG>
     
     
+Class: ome:RCYGCplNk56hHMKFDluqmIL
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        rdfs:label "End of chord"@en,
+        rdfs:label "Конец хорды"@ru,
+        rdfs:label "Хорда очы"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#RCzUCLrvHJPhhhsWvrVsD6G>
+    
+    
 Class: ome:RCkUTtUbKre8bgdVNUYU5WH
 
     Annotations: 
@@ -9987,6 +10293,17 @@ Class: ome:RCkUTtUbKre8bgdVNUYU5WH
         <http://ontomathpro.org/ontomathedu#RD1pIb3DnsdR988ULnXWqLM>
     
     
+Class: ome:RCkiV09orVlVJLIfoaC7kGU
+
+    Annotations: 
+        rdfs:label "Distance between circles"@en,
+        rdfs:label "Расстояние между окружностями"@ru,
+        rdfs:label "Әйләнәләр арасындагы ераклык"@tt
+    
+    SubClassOf: 
+        ome:R8WR60wsNklHjl4NGzXRR8s
+    
+    
 Class: ome:RCt7lcTOjhUpfFNerfflVVe
 
     Annotations: 
@@ -9999,11 +10316,36 @@ Class: ome:RCt7lcTOjhUpfFNerfflVVe
         <http://ontomathpro.org/ontomathedu#R7tKAdeztuqWegpxL6Th0VF>
     
     
+Class: ome:RCvt4Eq4xAecWU3mgytz5Sx
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
+        rdfs:label "Distance between parallel lines"@en,
+        rdfs:label "Параллель турылар арасындагы ераклык"@tt,
+        rdfs:label "Расстояние между параллельными прямыми"@ru
+    
+    SubClassOf: 
+        ome:R8WR60wsNklHjl4NGzXRR8s
+    
+    
+Class: ome:RDFH6PcwRBqOAcCG4qckl8d
+
+    Annotations: 
+        rdfs:label "Point does not belong to a circle"@en,
+        rdfs:label "Нокта әйләнәдә ятмый"@tt,
+        rdfs:label "Точка не принадлежит окружности"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#RB0VqNNOSWAaEcyKZpkvVSp>
+    
+    
 Class: ome:RDFqYhBsS8ekdOxCiEEW119
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Diameter>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/treugolniki-9112/zadachi-na-postroenie-10433/re-b5a2c2a4-5b38-4bef-b8f0-3ebb5cae946f>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Diameter>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Диаметр>,
         rdfs:label "Diameter of a disk"@en,
         rdfs:label "Диаметр круга"@ru,
@@ -10025,12 +10367,57 @@ Class: ome:RDJenreEqS5HbLlQlItY07M
         <http://ontomathpro.org/ontomathedu#RC2pGu3hEkqE8gkDdWj3pSz>
     
     
+Class: ome:RDM1aLr9QFdpwX92Lq5ZDqh
+
+    Annotations: 
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
+        rdfs:label "Perpendicular length"@en,
+        rdfs:label "Длина перпендикуляра"@ru,
+        rdfs:label "Перпендикуляр озынлыгы"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R9UdLt5hK0h4QuMDiR4FSVL>
+    
+    
+Class: ome:RDYhztPsyqktMsRLDRicYH1
+
+    Annotations: 
+        rdfs:label "Конец радиуса"@ru,
+        rdfs:label "Радиус очы"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#RCzUCLrvHJPhhhsWvrVsD6G>
+    
+    
+Class: ome:RDcPkSqORkSyzOdOg57XKvl
+
+    Annotations: 
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/sootnoshenie-mezhdu-storonami-i-uglami-treugolnika-9155/postroenie-treugolnikov-po-trem-elementam-12420/re-c4d19cfc-02e9-45ed-a6bd-1921b7bbfd92>,
+        rdfs:label "Наклонная"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R8bXnaTM9tBSSyVXZRtJJeG>
+    
+    
+Class: ome:RDiwSOsh3r3oxW2CM9V9ZQe
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        rdfs:label "Point does not belong to a line"@en,
+        rdfs:label "Нокта турыда ятмый"@tt,
+        rdfs:label "Точка не принадлежит прямой"@ru
+    
+    SubClassOf: 
+        ome:RCBl9oW7ti3K7WYnz34yQ43
+    
+    
 Class: ome:RDnaDAsenQPR0eJPudeISPJ
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/nachalnye-geometricheskie-svedeniia-14930/izmerenie-otrezkov-i-uglov-9704/re-8118f3d0-7a8f-4f3a-91cc-9e12cff98c74>,
-        rdfs:label "Длины равных отрезков равны"@ru
+        rdfs:label "Длины равных отрезков равны"@ru,
+        rdfs:label "Тигез кисемтәләрнең озынлыклары тигез"@tt
     
     SubClassOf: 
         ome:RCXOIABX1NLJbfTgzAEKe2y
@@ -10058,15 +10445,52 @@ Class: ome:RDsMvmjyO7AazKnRANYAGKM
         <http://ontomathpro.org/ontomathedu#RBA3nicOsWGVcUPO9rzCV9y>
     
     
+Class: ome:RDuHAmhs9vGDaZBLfW4FjlU
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
+        rdfs:label "Common point of a line and a circle"@en,
+        rdfs:label "Общая точка прямой и окружности"@ru,
+        rdfs:label "Туры һәм әйләнәнең урта ноктасы"@tt
+    
+    SubClassOf: 
+        ome:RI3ZoRKMkjiS3xzmENxkKo
+    
+    
+Class: ome:RE5N4dEI4lukuIKOV3268j
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
+        rdfs:label "Point belongs to a line"@en,
+        rdfs:label "Нокта турыда ята"@tt,
+        rdfs:label "Точка принадлежит прямой"@ru
+    
+    SubClassOf: 
+        ome:RCBl9oW7ti3K7WYnz34yQ43
+    
+    
 Class: ome:RGSJFZM9WNwNVoyrCkdrwt
 
     Annotations: 
         ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-7>,
         ome:eduRefRus <https://www.yaklass.ru/p/geometria/7-klass/parallelnye-priamye-9124/priznaki-parallelnosti-dvukh-priamykh-aksioma-parallelnykh-priamykh-9228/re-1e38c190-6fee-47d7-9380-d1e0d2858c37>,
+        rdfs:label "Кисешүче турылар"@tt,
         rdfs:label "Пересекающиеся прямые"@ru
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#R97AJOIwjOfj8bnVIChRSCL>
+    
+    
+Class: ome:RI3ZoRKMkjiS3xzmENxkKo
+
+    Annotations: 
+        rdfs:label "Intersection point of geometric figures"@en,
+        rdfs:label "Геометрик фигуралар кисешкән нокта"@tt,
+        rdfs:label "Точка пересечения геометрических фигур"@ru
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R71GKMyesTQoOWWvX1M74EE>
     
     
 Class: ome:RKA4o3EKuy5nTsOK7DG31v
@@ -10088,6 +10512,17 @@ Class: ome:ROf00NoTGR0G8YryP8pIWE
     
     SubClassOf: 
         <http://ontomathpro.org/ontomathedu#R8XGUyW0miz4jIu2ExNXvrd>
+    
+    
+Class: ome:RQy7yfz1R5LWbTrhmi8REN
+
+    Annotations: 
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/vpisannaia-i-opisannaia-okruzhnosti-9244/re-44ec2b8e-dc52-456f-a0dc-69a012de326f>,
+        rdfs:label "Теорема о центре вписанной окружности треугольника"@ru,
+        rdfs:label "Өчпочмакның камаулы әйләнә үзәге турында теорема"@tt
+    
+    SubClassOf: 
+        <http://ontomathpro.org/ontomathedu#R8EG3juvpyWMRMbIyCGDDXr>
     
     
 Class: ome:RS8JGHVMudLRbAVSUJxgnZ
@@ -10122,6 +10557,19 @@ Class: ome:RV72H20E9ztdrQdmDUkJc4
         ome:RBJ17uigIxIF6XkATvY18Rn
     
     
+Class: ome:RVp0kK3dZ8Tm2GBnKaKtdZ
+
+    Annotations: 
+        ome:belongsToEducationalLevel <http://ontomathpro.org/ontomathedu#grade-ru-8>,
+        ome:eduRefRus <https://www.yaklass.ru/p/geometria/8-klass/okruzhnost-9230/kasatelnaia-k-okruzhnosti-9242/re-ca89ade5-1388-4df8-af6d-be4437358f63>,
+        rdfs:label "Tangency point of a line and a circle"@en,
+        rdfs:label "Точка касания прямой и окружности"@ru,
+        rdfs:label "Туры һәм әйләнәнең орыну ноктасы"@tt
+    
+    SubClassOf: 
+        ome:RDuHAmhs9vGDaZBLfW4FjlU
+    
+    
 Class: ome:RXD08LkMWrOTq4wFe70jbX
 
     Annotations: 
@@ -10152,7 +10600,7 @@ Class: ome:Rm3m3wfOZWbKAJOIRWBmz5
     Annotations: 
         ome:eduRefRus <https://dic.academic.ru/dic.nsf/ruwiki/11903>,
         ome:eduRefRus <https://mathvox.ru/geometria/treugolniki/glava-13/opredelenie-vpisannoi-v-treugolnik-okrujnosti/>,
-        <http://purl.org/dc/elements/1.1/source> <https://.org/wiki/Incenter>,
+        <http://purl.org/dc/elements/1.1/source> <https://en.wikipedia.org/wiki/Incenter>,
         <http://purl.org/dc/elements/1.1/source> <https://ru.wikipedia.org/wiki/Центр_вписанной_окружности>,
         rdfs:label "Incenter"@en,
         rdfs:label "Центр вписанной окружности треугольника"@ru,
@@ -10197,9 +10645,6 @@ Class: ome:RyT3FIsgqYTt2T9SjipnUj
     SubClassOf: 
         ome:RBJ17uigIxIF6XkATvY18Rn
     
-    
-Class: owl:Thing
-
     
 Individual: ome:grade-en-elementary
 
@@ -10261,5 +10706,3 @@ Individual: ome:grade-ru-d
 
     Annotations: 
         rdfs:label "Дополнительная программа"@ru
-    
-    
