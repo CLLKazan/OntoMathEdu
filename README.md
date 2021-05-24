@@ -16,7 +16,7 @@ OntoMathEdu ontology is organized in three layers:
 
 The concepts are organized in two main hierarchies: the hierarchy of objects and the hierarchy of reified relationships.
 
-This repository contains the first release of the ontology, which consists in the linguistic layer, covering plane geometry domain.
+This repository contains the 2nd release of the ontology, which consists in the linguistic layer, covering plane geometry domain. In the 2nd release, the logical relationships between concepts were complemented by the prerequisite ones.
 
 The ontology is expressed in the [OWL 2 Manchester Notation](http://www.w3.org/TR/owl2-manchester-syntax/), and can be edited by any OWL-compitable ontology editor, such as [Protégé](https://protege.stanford.edu/).
 
